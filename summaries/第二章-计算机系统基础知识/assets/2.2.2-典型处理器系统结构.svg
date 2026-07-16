@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="540" viewBox="0 0 700 540" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="700" height="540" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="350" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">典型的处理器系统结构（按笔记描述复原，箭头方向待与书对照）</text>
+
+  <defs>
+    <marker id="dot" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <circle cx="4" cy="4" r="3" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- 连线（双向关联，用两端圆点表示） -->
+  <g stroke="#64748b" stroke-width="2" fill="none" marker-start="url(#dot)" marker-end="url(#dot)">
+    <!-- 指令部件 ↔ 完成部件 -->
+    <line x1="222" y1="80" x2="458" y2="80"/>
+    <!-- 指令部件 ↔ 寄存器组 -->
+    <line x1="130" y1="107" x2="130" y2="183"/>
+    <!-- 指令部件 ↔ MMU -->
+    <line x1="145" y1="107" x2="330" y2="308"/>
+    <!-- 运算部件 ↔ 存取部件 -->
+    <line x1="412" y1="210" x2="478" y2="210"/>
+    <!-- 运算部件 ↔ 完成部件 -->
+    <line x1="352" y1="183" x2="512" y2="107"/>
+    <!-- 存取部件 ↔ 完成部件 -->
+    <line x1="552" y1="183" x2="544" y2="107"/>
+    <!-- 存取部件 ↔ MMU -->
+    <line x1="548" y1="237" x2="408" y2="308"/>
+    <!-- Cache ↔ MMU -->
+    <line x1="370" y1="360" x2="370" y2="403"/>
+    <!-- Cache ↔ 地址总线 -->
+    <line x1="330" y1="457" x2="230" y2="490"/>
+    <!-- Cache ↔ 数据总线 -->
+    <line x1="410" y1="457" x2="500" y2="490"/>
+  </g>
+
+  <!-- 部件盒子 -->
+  <g stroke="#3b82f6" stroke-width="1.5" fill="#dbeafe">
+    <rect x="60"  y="55"  width="160" height="52" rx="8"/>   <!-- 指令部件 -->
+    <rect x="460" y="55"  width="160" height="52" rx="8"/>   <!-- 完成部件 -->
+    <rect x="60"  y="185" width="140" height="52" rx="8"/>   <!-- 寄存器组 -->
+    <rect x="272" y="185" width="140" height="52" rx="8"/>   <!-- 运算部件 -->
+    <rect x="480" y="185" width="140" height="52" rx="8"/>   <!-- 存取部件 -->
+  </g>
+  <g stroke="#f59e0b" stroke-width="1.5" fill="#fef3c7">
+    <rect x="300" y="308" width="140" height="52" rx="8"/>   <!-- MMU -->
+    <rect x="300" y="405" width="140" height="52" rx="8"/>   <!-- Cache -->
+  </g>
+  <g font-size="16" fill="#1e3a5f" text-anchor="middle">
+    <text x="140" y="86">指令部件</text>
+    <text x="540" y="86">完成部件</text>
+    <text x="130" y="216">寄存器组</text>
+    <text x="342" y="216">运算部件</text>
+    <text x="550" y="216">存取部件</text>
+  </g>
+  <g font-size="16" fill="#78350f" text-anchor="middle">
+    <text x="370" y="339">MMU 部件</text>
+    <text x="370" y="436">Cache 部件</text>
+  </g>
+
+  <!-- 总线 -->
+  <g stroke="#6b7280" stroke-width="1.5" fill="#e5e7eb">
+    <rect x="70"  y="490" width="270" height="26" rx="6"/>
+    <rect x="390" y="490" width="240" height="26" rx="6"/>
+  </g>
+  <g font-size="14" fill="#374151" text-anchor="middle">
+    <text x="205" y="508">地址总线（与 Cache 相互传输）</text>
+    <text x="510" y="508">数据总线（与 Cache 关联）</text>
+  </g>
+
+  <!-- 同级说明 -->
+  <text x="340" y="266" text-anchor="middle" font-size="12" fill="#9ca3af">── 寄存器组、运算部件、存取部件属于同级 ──</text>
+</svg>

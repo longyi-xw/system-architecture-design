@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="440" viewBox="0 0 680 440" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="680" height="440" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="340" y="34" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">存储器分层体系结构</text>
+
+  <!-- 四层金字塔（上小下大） -->
+  <g stroke="none">
+    <rect x="200" y="60"  width="280" height="66" rx="8" fill="#1d4ed8"/>
+    <rect x="160" y="140" width="360" height="66" rx="8" fill="#3b82f6"/>
+    <rect x="100" y="220" width="480" height="66" rx="8" fill="#93c5fd"/>
+    <rect x="70"  y="300" width="540" height="66" rx="8" fill="#dbeafe"/>
+  </g>
+
+  <g text-anchor="middle">
+    <text x="340" y="87"  font-size="15" font-weight="bold" fill="#ffffff">片上缓存（L1/L2）</text>
+    <text x="340" y="110" font-size="12.5" fill="#dbeafe">处理器核心内 · SRAM · 16KB–512KB</text>
+
+    <text x="340" y="167" font-size="15" font-weight="bold" fill="#ffffff">片外缓存（L2/L3，平台 Cache）</text>
+    <text x="340" y="190" font-size="12.5" fill="#dbeafe">核外经交换互联开关 · SRAM · 256KB–4MB</text>
+
+    <text x="340" y="247" font-size="15" font-weight="bold" fill="#1e3a5f">主存（内存）</text>
+    <text x="340" y="270" font-size="12.5" fill="#1e40af">独立部件/芯片，总线连接处理器 · DRAM 靠不断充电维持数据 · MB–十几GB</text>
+
+    <text x="340" y="327" font-size="15" font-weight="bold" fill="#1e3a5f">外存</text>
+    <text x="340" y="350" font-size="12.5" fill="#1e40af">磁带、光盘、磁盘、各类 Flash 等 · 掉电不丢数据 · 介质不同容量/年限不同</text>
+  </g>
+
+  <!-- 左侧：速度箭头（向下变慢） -->
+  <path d="M 52 70 L 52 356" stroke="#ef4444" stroke-width="2.5" fill="none" marker-end="url(#arrowR)"/>
+  <text x="30" y="213" font-size="13" fill="#b91c1c" transform="rotate(-90 30 213)" text-anchor="middle">访问速度：快 → 慢</text>
+
+  <!-- 右侧：容量箭头（向下变大） -->
+  <path d="M 628 70 L 628 356" stroke="#16a34a" stroke-width="2.5" fill="none" marker-end="url(#arrowGr)"/>
+  <text x="652" y="213" font-size="13" fill="#15803d" transform="rotate(90 652 213)" text-anchor="middle">容量：小 → 大</text>
+
+  <text x="340" y="404" text-anchor="middle" font-size="12.5" fill="#6b7280">按硬件结构分类：SRAM ｜ DRAM ｜ NVRAM ｜ Flash ｜ EPROM ｜ Disk</text>
+
+  <defs>
+    <marker id="arrowR" markerWidth="10" markerHeight="10" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#ef4444"/>
+    </marker>
+    <marker id="arrowGr" markerWidth="10" markerHeight="10" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#16a34a"/>
+    </marker>
+  </defs>
+</svg>
