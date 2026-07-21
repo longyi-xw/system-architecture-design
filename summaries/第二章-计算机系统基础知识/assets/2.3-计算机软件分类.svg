@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="760" height="300" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="380" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">计算机软件分类</text>
+
+  <!-- 根：计算机软件 -->
+  <rect x="310" y="44" width="140" height="38" rx="8" fill="#dbeafe" stroke="#3b82f6"/>
+  <text x="380" y="68" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#1e3a5f">计算机软件</text>
+
+  <!-- 根 → 两大分支 -->
+  <path d="M 380 82 L 380 96 L 155 96 L 155 108" stroke="#16a34a" stroke-width="2" fill="none" marker-end="url(#arrowG2)"/>
+  <path d="M 380 82 L 380 96 L 630 96 L 630 108" stroke="#16a34a" stroke-width="2" fill="none" marker-end="url(#arrowG2)"/>
+
+  <!-- 两大分支：系统软件 / 应用软件 -->
+  <rect x="70"  y="110" width="170" height="38" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <rect x="545" y="110" width="170" height="56" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="155" y="134" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#14532d">系统软件</text>
+  <g text-anchor="middle">
+    <text x="630" y="132" font-size="14.5" font-weight="bold" fill="#14532d">应用软件</text>
+    <text x="630" y="150" font-size="10.5" fill="#166534">为某类应用需要或</text>
+    <text x="630" y="163" font-size="10.5" fill="#166534">解决特定问题而设计</text>
+  </g>
+
+  <!-- 系统软件 → 4 个组成（总线状连接） -->
+  <path d="M 155 148 L 155 160" stroke="#9ca3af" stroke-width="1.5" fill="none"/>
+  <path d="M 80 160 L 530 160" stroke="#9ca3af" stroke-width="1.5" fill="none"/>
+  <path d="M 80 160 L 80 172"   stroke="#9ca3af" stroke-width="1.5" fill="none" marker-end="url(#arrowGr2)"/>
+  <path d="M 230 160 L 230 172" stroke="#9ca3af" stroke-width="1.5" fill="none" marker-end="url(#arrowGr2)"/>
+  <path d="M 380 160 L 380 172" stroke="#9ca3af" stroke-width="1.5" fill="none" marker-end="url(#arrowGr2)"/>
+  <path d="M 530 160 L 530 172" stroke="#9ca3af" stroke-width="1.5" fill="none" marker-end="url(#arrowGr2)"/>
+
+  <g stroke="#93c5fd" fill="#eff6ff">
+    <rect x="10"  y="174" width="140" height="40" rx="6"/>
+    <rect x="160" y="174" width="140" height="40" rx="6"/>
+    <rect x="310" y="174" width="140" height="40" rx="6"/>
+    <rect x="460" y="174" width="140" height="40" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a5f">
+    <text x="80"  y="198">操作系统</text>
+    <text x="230" y="191">程序设计语言</text>
+    <text x="230" y="206">翻译系统</text>
+    <text x="380" y="198">数据库管理系统</text>
+    <text x="530" y="198">网络系统等</text>
+  </g>
+
+  <text x="305" y="234" text-anchor="middle" font-size="11.5" fill="#6b7280">不依赖特定应用领域的通用软件（举例非穷尽）</text>
+
+  <line x1="30" y1="256" x2="730" y2="256" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="380" y="278" text-anchor="middle" font-size="12" fill="#374151">计算机软件 = 程序 + 其文档（是计算任务的处理对象和处理规则的描述）</text>
+
+  <defs>
+    <marker id="arrowG2" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrowGr2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L7,4 L0,8 Z" fill="#9ca3af"/>
+    </marker>
+  </defs>
+</svg>
