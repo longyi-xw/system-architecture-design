@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="360" viewBox="0 0 820 360" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="360" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">数据库分类 · 关系数据库设计六步骤</text>
+
+  <!-- ① 分类 -->
+  <text x="20" y="54" font-size="13" font-weight="bold" fill="#1e3a5f">① 三种划分视角</text>
+
+  <g stroke="#93c5fd" fill="#dbeafe">
+    <rect x="20" y="64"  width="120" height="34" rx="6"/>
+    <rect x="20" y="108" width="120" height="34" rx="6"/>
+    <rect x="20" y="152" width="120" height="34" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a5f">
+    <text x="80" y="86">早期种类</text>
+    <text x="80" y="130">目前常见</text>
+    <text x="80" y="174">按存储体系</text>
+  </g>
+
+  <!-- 早期 3 类 -->
+  <g stroke="#c4b5fd" fill="#f5f3ff">
+    <rect x="156" y="64" width="205" height="34" rx="6"/>
+    <rect x="377" y="64" width="205" height="34" rx="6"/>
+    <rect x="598" y="64" width="202" height="34" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="12" fill="#4c1d95">
+    <text x="258" y="86">层次式数据库</text>
+    <text x="479" y="86">网络式数据库</text>
+    <text x="699" y="86">关系型数据库</text>
+  </g>
+
+  <!-- 目前 2 类 -->
+  <g stroke="#6ee7b7" fill="#ecfdf5">
+    <rect x="156" y="108" width="316" height="34" rx="6"/>
+    <rect x="488" y="108" width="312" height="34" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="12" fill="#065f46">
+    <text x="314" y="130">关系型数据库</text>
+    <text x="644" y="130">非关系型数据库</text>
+  </g>
+
+  <!-- 按存储体系 5 类 -->
+  <g stroke="#fbbf24" fill="#fffbeb">
+    <rect x="156" y="152" width="124" height="34" rx="6"/>
+    <rect x="288" y="152" width="124" height="34" rx="6"/>
+    <rect x="420" y="152" width="124" height="34" rx="6"/>
+    <rect x="552" y="152" width="124" height="34" rx="6"/>
+    <rect x="684" y="152" width="116" height="34" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="11.5" fill="#78350f">
+    <text x="218" y="174">关系型</text>
+    <text x="350" y="174">键值</text>
+    <text x="482" y="174">列存储</text>
+    <text x="614" y="174">文档</text>
+    <text x="742" y="174">搜索引擎</text>
+  </g>
+
+  <line x1="20" y1="206" x2="800" y2="206" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ② 六步骤 -->
+  <text x="20" y="230" font-size="13" font-weight="bold" fill="#1e3a5f">② 关系数据库设计的基本步骤</text>
+
+  <g stroke="#3b82f6" fill="#eff6ff">
+    <rect x="20"  y="244" width="118" height="44" rx="6"/>
+    <rect x="152" y="244" width="118" height="44" rx="6"/>
+    <rect x="284" y="244" width="118" height="44" rx="6"/>
+    <rect x="416" y="244" width="118" height="44" rx="6"/>
+    <rect x="548" y="244" width="118" height="44" rx="6"/>
+    <rect x="680" y="244" width="118" height="44" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a5f">
+    <text x="79"  y="263">需求分析</text>
+    <text x="211" y="263">概念结构</text>
+    <text x="211" y="279">设计</text>
+    <text x="343" y="263">逻辑结构</text>
+    <text x="343" y="279">设计</text>
+    <text x="475" y="263">物理结构</text>
+    <text x="475" y="279">设计</text>
+    <text x="607" y="263">应用程序</text>
+    <text x="607" y="279">设计</text>
+    <text x="739" y="271">运行和维护</text>
+  </g>
+  <g text-anchor="middle" font-size="10" fill="#475569">
+    <text x="79" y="281">收集基础数据</text>
+  </g>
+
+  <g stroke="#3b82f6" stroke-width="2" fill="none" marker-end="url(#aB3)">
+    <path d="M 138 266 L 148 266"/>
+    <path d="M 270 266 L 280 266"/>
+    <path d="M 402 266 L 412 266"/>
+    <path d="M 534 266 L 544 266"/>
+    <path d="M 666 266 L 676 266"/>
+  </g>
+
+  <text x="20" y="312" font-size="11" fill="#6b7280">设计内容 = 结构特性 + 行为特性；特点：以数据模型为核心、静态结构与动态行为分离、试探性、反复性和多步性</text>
+  <text x="20" y="332" font-size="11" fill="#6b7280">四类设计方法：直观设计法 · 规范设计法 · 计算机辅助设计法 · 自动化设计法</text>
+
+  <defs>
+    <marker id="aB3" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L7,4 L0,8 Z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+</svg>
