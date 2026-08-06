@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="330" viewBox="0 0 820 330" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="330" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">OSI 七层模型 · TCP/IP 对照 · 设备对应（🔴 核心考点）</text>
+
+  <!-- 表头 -->
+  <g font-size="12" font-weight="bold" fill="#374151" text-anchor="middle">
+    <text x="100" y="52">OSI 七层</text>
+    <text x="300" y="52">TCP/IP 四层</text>
+    <text x="600" y="52">代表协议 / 对应设备</text>
+  </g>
+
+  <!-- OSI 列（7 行，高亮下 3 层） -->
+  <g stroke="#93c5fd" fill="#eff6ff">
+    <rect x="20" y="60" width="160" height="30" rx="4"/>
+    <rect x="20" y="90" width="160" height="30" rx="4"/>
+    <rect x="20" y="120" width="160" height="30" rx="4"/>
+    <rect x="20" y="150" width="160" height="30" rx="4"/>
+  </g>
+  <g stroke="#fca5a5" fill="#fee2e2">
+    <rect x="20" y="180" width="160" height="30" rx="4"/>
+    <rect x="20" y="210" width="160" height="30" rx="4"/>
+    <rect x="20" y="240" width="160" height="30" rx="4"/>
+  </g>
+  <g text-anchor="middle" font-size="12">
+    <text x="100" y="80" fill="#1e3a5f">应用层</text>
+    <text x="100" y="110" fill="#1e3a5f">表示层</text>
+    <text x="100" y="140" fill="#1e3a5f">会话层</text>
+    <text x="100" y="170" fill="#1e3a5f">传输层</text>
+    <text x="100" y="200" font-weight="bold" fill="#7f1d1d">网络层</text>
+    <text x="100" y="230" font-weight="bold" fill="#7f1d1d">数据链路层</text>
+    <text x="100" y="260" font-weight="bold" fill="#7f1d1d">物理层</text>
+  </g>
+
+  <!-- TCP/IP 列（合并块） -->
+  <g stroke="#c4b5fd" fill="#f5f3ff">
+    <rect x="220" y="60"  width="160" height="90" rx="4"/>
+    <rect x="220" y="150" width="160" height="30" rx="4"/>
+    <rect x="220" y="180" width="160" height="30" rx="4"/>
+    <rect x="220" y="210" width="160" height="60" rx="4"/>
+  </g>
+  <g text-anchor="middle" font-size="12" font-weight="bold" fill="#4c1d95">
+    <text x="300" y="108">应用层</text>
+    <text x="300" y="170">传输层</text>
+    <text x="300" y="200">网际层</text>
+    <text x="300" y="243">网络接口层</text>
+  </g>
+
+  <!-- 协议/设备列 -->
+  <g font-size="11" fill="#475569">
+    <text x="400" y="80">FTP · Telnet · SMTP · NFS · SNMP</text>
+    <text x="400" y="170">TCP · UDP</text>
+    <text x="400" y="196" fill="#7f1d1d">IP · ICMP · ARP · RARP</text>
+    <text x="400" y="211" font-weight="bold" fill="#7f1d1d">设备：路由器</text>
+    <text x="400" y="226" fill="#7f1d1d">Ethernet · FDDI · Token-Ring · PPP</text>
+    <text x="400" y="241" font-weight="bold" fill="#7f1d1d">设备：网桥 · 交换机</text>
+    <text x="400" y="260" font-weight="bold" fill="#7f1d1d">设备：集线器 · 中继器</text>
+  </g>
+
+  <line x1="20" y1="288" x2="800" y2="288" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="20" y="308" font-size="11" fill="#78350f">⚠️ 防火墙对应层次：多数资料归网络层/传输层（第 3~4 层），说法不完全一致，待核对</text>
+  <text x="20" y="324" font-size="11" fill="#6b7280">口诀：设备管的东西越来越"聪明"——集线器/中继器认电信号 → 网桥/交换机认 MAC 地址 → 路由器认 IP 地址</text>
+</svg>
