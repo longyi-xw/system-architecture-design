@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="620" viewBox="0 0 820 620" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="620" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">计算机软件（续）：网络协议 · 中间件 · 软件构件 · 应用软件</text>
+
+  <!-- ① 网络协议 -->
+  <text x="20" y="50" font-size="13" font-weight="bold" fill="#6b7280">① 网络协议（按覆盖范围）</text>
+  <g stroke="#93c5fd" fill="#eff6ff">
+    <rect x="20"  y="58" width="186" height="34" rx="6"/>
+    <rect x="218" y="58" width="186" height="34" rx="6"/>
+    <rect x="416" y="58" width="186" height="34" rx="6"/>
+    <rect x="614" y="58" width="186" height="34" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a5f">
+    <text x="113" y="80">局域网协议 LAN</text>
+    <text x="311" y="80">广域网协议 WAN</text>
+    <text x="509" y="80">无线网协议</text>
+    <text x="707" y="80">移动网协议</text>
+  </g>
+  <text x="20" y="106" font-size="11" fill="#b45309">⚠️ 网络取材原文仅给出以上四类名称，未展开；如需协议举例请翻书核对后补充</text>
+
+  <line x1="20" y1="122" x2="800" y2="122" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ② 中间件 -->
+  <text x="20" y="144" font-size="13" font-weight="bold" fill="#7f1d1d">② 中间件</text>
+  <text x="20" y="164" font-size="11" fill="#475569">定义：位于操作系统与应用软件之间的独立系统软件，屏蔽底层 OS / 网络协议 / 硬件 / 数据库差异，为分布式应用提供统一运行环境</text>
+
+  <g stroke="#fca5a5" fill="#fee2e2">
+    <rect x="20"  y="176" width="186" height="40" rx="6"/>
+    <rect x="218" y="176" width="186" height="40" rx="6"/>
+    <rect x="416" y="176" width="186" height="40" rx="6"/>
+    <rect x="614" y="176" width="186" height="40" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="11.5" font-weight="bold" fill="#7f1d1d">
+    <text x="113" y="192">通信处理</text>
+    <text x="113" y="207">（消息）中间件</text>
+    <text x="311" y="192">事务处理</text>
+    <text x="311" y="207">（交易）中间件</text>
+    <text x="509" y="192">数据存取</text>
+    <text x="509" y="207">管理中间件</text>
+    <text x="707" y="199">Web 服务器中间件</text>
+  </g>
+
+  <g stroke="#fca5a5" fill="#fee2e2">
+    <rect x="20"  y="224" width="254" height="34" rx="6"/>
+    <rect x="282" y="224" width="254" height="34" rx="6"/>
+    <rect x="544" y="224" width="254" height="34" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="11.5" font-weight="bold" fill="#7f1d1d">
+    <text x="147" y="246">跨平台和架构的中间件</text>
+    <text x="409" y="246">专用平台中间件</text>
+    <text x="671" y="246">网络中间件</text>
+  </g>
+
+  <line x1="20" y1="272" x2="800" y2="272" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ③ 软件构件 -->
+  <text x="20" y="294" font-size="13" font-weight="bold" fill="#1e3a5f">③ 软件构件</text>
+  <text x="20" y="314" font-size="11" fill="#475569">定义：一个自包容、可复用的程序集（又称组件）</text>
+
+  <text x="20" y="336" font-size="11.5" font-weight="bold" fill="#6b7280">组装模型的一般开发过程</text>
+  <g stroke="#93c5fd" fill="#eff6ff">
+    <rect x="20"  y="344" width="187" height="34" rx="6"/>
+    <rect x="217" y="344" width="187" height="34" rx="6"/>
+    <rect x="414" y="344" width="187" height="34" rx="6"/>
+    <rect x="611" y="344" width="187" height="34" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a5f">
+    <text x="113" y="366">设计构件组装</text>
+    <text x="310" y="366">建立构件库</text>
+    <text x="507" y="366">构建应用软件</text>
+    <text x="704" y="366">测试与发布</text>
+  </g>
+  <g stroke="#3b82f6" stroke-width="2" fill="none" marker-end="url(#arrowC)">
+    <path d="M 207 361 L 216 361"/>
+    <path d="M 404 361 L 413 361"/>
+    <path d="M 601 361 L 610 361"/>
+  </g>
+
+  <text x="20" y="400" font-size="11.5" font-weight="bold" fill="#7f1d1d">五大特征</text>
+  <g stroke="#fca5a5" fill="#fee2e2">
+    <rect x="20"  y="408" width="149" height="40" rx="6"/>
+    <rect x="177" y="408" width="149" height="40" rx="6"/>
+    <rect x="334" y="408" width="149" height="40" rx="6"/>
+    <rect x="491" y="408" width="149" height="40" rx="6"/>
+    <rect x="648" y="408" width="149" height="40" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#7f1d1d">
+    <text x="94.5" y="425" font-size="12" font-weight="bold">可组装性</text>
+    <text x="94.5" y="440" font-size="9.5">经公开接口交互</text>
+    <text x="251.5" y="425" font-size="12" font-weight="bold">可部署性</text>
+    <text x="251.5" y="440" font-size="9.5">二进制·独立部署</text>
+    <text x="408.5" y="431" font-size="12" font-weight="bold">文档化</text>
+    <text x="565.5" y="425" font-size="12" font-weight="bold">独立性</text>
+    <text x="565.5" y="440" font-size="9.5">声明外部依赖</text>
+    <text x="722.5" y="425" font-size="12" font-weight="bold">标准化</text>
+    <text x="722.5" y="440" font-size="9.5">符合构件模型</text>
+  </g>
+
+  <text x="20" y="474" font-size="11.5" font-weight="bold" fill="#78350f">商用标准规范</text>
+  <g stroke="#fbbf24" fill="#fffbeb">
+    <rect x="20"  y="482" width="254" height="40" rx="6"/>
+    <rect x="282" y="482" width="254" height="40" rx="6"/>
+    <rect x="544" y="482" width="254" height="40" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#78350f">
+    <text x="147" y="499" font-size="12" font-weight="bold">CORBA</text>
+    <text x="147" y="514" font-size="9.5">OMG 制定的公共对象请求代理架构</text>
+    <text x="409" y="499" font-size="12" font-weight="bold">J2EE</text>
+    <text x="409" y="514" font-size="9.5">同时支持 RMI 和 IIOP</text>
+    <text x="671" y="499" font-size="12" font-weight="bold">DNA 2000</text>
+    <text x="671" y="514" font-size="9.5">微软的构件标准</text>
+  </g>
+
+  <line x1="20" y1="538" x2="800" y2="538" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ④ 应用软件 -->
+  <text x="20" y="560" font-size="13" font-weight="bold" fill="#14532d">④ 应用软件</text>
+  <g stroke="#6ee7b7" fill="#ecfdf5">
+    <rect x="20"  y="568" width="386" height="34" rx="6"/>
+    <rect x="414" y="568" width="386" height="34" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="12" font-weight="bold" fill="#065f46">
+    <text x="213" y="590">通用应用软件</text>
+    <text x="607" y="590">定制应用软件</text>
+  </g>
+
+  <defs>
+    <marker id="arrowC" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L7,4 L0,8 Z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+</svg>
