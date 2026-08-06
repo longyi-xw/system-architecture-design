@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="420" viewBox="0 0 820 420" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="420" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">嵌入式系统及软件全景</text>
+
+  <!-- ① 组成 -->
+  <text x="20" y="50" font-size="13" font-weight="bold" fill="#6b7280">① 嵌入式系统组成</text>
+  <g stroke="#93c5fd" fill="#eff6ff">
+    <rect x="20"  y="58" width="150" height="34" rx="6"/>
+    <rect x="178" y="58" width="150" height="34" rx="6"/>
+    <rect x="336" y="58" width="150" height="34" rx="6"/>
+    <rect x="494" y="58" width="150" height="34" rx="6"/>
+    <rect x="652" y="58" width="148" height="34" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="11.5" font-weight="bold" fill="#1e3a5f">
+    <text x="95" y="80">嵌入式处理器</text>
+    <text x="253" y="80">支撑硬件</text>
+    <text x="411" y="80">嵌入式操作系统</text>
+    <text x="569" y="80">支撑软件</text>
+    <text x="726" y="80">应用软件</text>
+  </g>
+  <text x="20" y="106" font-size="11" fill="#475569">特点关键词：专用性强 · 软硬一体 · 资源少 · 代码固化 · <tspan font-weight="bold" fill="#b91c1c">安全性可靠性要求高</tspan></text>
+
+  <line x1="20" y1="122" x2="800" y2="122" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ② 分类 -->
+  <text x="20" y="144" font-size="13" font-weight="bold" fill="#4c1d95">② 分类（两个维度交叉）</text>
+  <text x="20" y="164" font-size="11.5" font-weight="bold" fill="#6b7280">按时间特性</text>
+  <g stroke="#c4b5fd" fill="#f5f3ff">
+    <rect x="120" y="150" width="330" height="30" rx="6"/>
+    <rect x="460" y="150" width="200" height="30" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="11.5" fill="#4c1d95">
+    <text x="285" y="170">实时系统 RTS（<tspan font-weight="bold">强/硬实时</tspan> · <tspan font-weight="bold">弱/软实时</tspan>）</text>
+    <text x="560" y="170">非实时系统</text>
+  </g>
+  <text x="20" y="200" font-size="11.5" font-weight="bold" fill="#6b7280">按安全性</text>
+  <g stroke="#a78bfa" fill="#ede9fe">
+    <rect x="120" y="186" width="330" height="30" rx="6"/>
+    <rect x="460" y="186" width="200" height="30" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="11.5" fill="#4c1d95">
+    <text x="285" y="206" font-weight="bold">安全攸关系统</text>
+    <text x="560" y="206">非安全攸关系统</text>
+  </g>
+
+  <line x1="20" y1="232" x2="800" y2="232" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ③ 软件五层架构 -->
+  <text x="20" y="254" font-size="13" font-weight="bold" fill="#78350f">③ 嵌入式软件五层架构</text>
+  <g stroke="#fbbf24" fill="#fffbeb">
+    <rect x="20"  y="262" width="150" height="34" rx="6"/>
+    <rect x="178" y="262" width="150" height="34" rx="6"/>
+    <rect x="336" y="262" width="150" height="34" rx="6"/>
+    <rect x="494" y="262" width="150" height="34" rx="6"/>
+    <rect x="652" y="262" width="148" height="34" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="11.5" font-weight="bold" fill="#78350f">
+    <text x="95" y="284">硬件层</text>
+    <text x="253" y="284">抽象层</text>
+    <text x="411" y="284">操作系统层</text>
+    <text x="569" y="284">中间件层</text>
+    <text x="726" y="284">应用层</text>
+  </g>
+  <g stroke="#f59e0b" stroke-width="2" fill="none" marker-end="url(#arrowE)">
+    <path d="M 170 279 L 177 279"/>
+    <path d="M 328 279 L 335 279"/>
+    <path d="M 486 279 L 493 279"/>
+    <path d="M 644 279 L 651 279"/>
+  </g>
+
+  <line x1="20" y1="314" x2="800" y2="314" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ④ 安全攸关软件安全性设计 -->
+  <text x="20" y="336" font-size="13" font-weight="bold" fill="#14532d">④ 安全攸关软件的安全性设计（对照）</text>
+  <g stroke="#6ee7b7" fill="#ecfdf5">
+    <rect x="20"  y="346" width="386" height="50" rx="6"/>
+    <rect x="414" y="346" width="386" height="50" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#065f46">
+    <text x="213" y="366" font-size="13" font-weight="bold">CMMI</text>
+    <text x="213" y="384" font-size="10.5">通用软件能力成熟度模型 · 面向过程改进</text>
+    <text x="607" y="366" font-size="13" font-weight="bold">DO-178（B/C）</text>
+    <text x="607" y="384" font-size="10.5">航空机载软件适航标准 · 按故障后果分 A–E 级</text>
+  </g>
+
+  <defs>
+    <marker id="arrowE" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L7,4 L0,8 Z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+</svg>
