@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="280" viewBox="0 0 820 280" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="280" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">数据库设计六步骤 · E-R 图合并三冲突</text>
+
+  <!-- ① 六步骤 -->
+  <text x="20" y="48" font-size="13" font-weight="bold" fill="#7f1d1d">① 数据库设计六步骤（🔴）</text>
+  <g stroke="#fca5a5" fill="#fee2e2">
+    <rect x="20"  y="56" width="126" height="44" rx="6"/>
+    <rect x="152" y="56" width="126" height="44" rx="6"/>
+    <rect x="284" y="56" width="126" height="44" rx="6"/>
+    <rect x="416" y="56" width="126" height="44" rx="6"/>
+    <rect x="548" y="56" width="126" height="44" rx="6"/>
+    <rect x="680" y="56" width="120" height="44" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="10.5" font-weight="bold" fill="#7f1d1d">
+    <text x="83"  y="76">需求分析</text>
+    <text x="215" y="76">概念结构</text>
+    <text x="215" y="90" font-size="9" font-weight="normal">设计（E-R图）</text>
+    <text x="347" y="76">逻辑结构</text>
+    <text x="347" y="90" font-size="9" font-weight="normal">设计</text>
+    <text x="479" y="76">物理结构</text>
+    <text x="479" y="90" font-size="9" font-weight="normal">设计</text>
+    <text x="611" y="76">数据库</text>
+    <text x="611" y="90" font-size="9" font-weight="normal">实施</text>
+    <text x="740" y="82">运行维护</text>
+  </g>
+  <g stroke="#dc2626" stroke-width="1.5" fill="none" marker-end="url(#arrowR)">
+    <path d="M 146 78 L 151 78"/>
+    <path d="M 278 78 L 283 78"/>
+    <path d="M 410 78 L 415 78"/>
+    <path d="M 542 78 L 547 78"/>
+    <path d="M 674 78 L 679 78"/>
+  </g>
+
+  <line x1="20" y1="118" x2="800" y2="118" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ② E-R图三冲突 -->
+  <text x="20" y="140" font-size="13" font-weight="bold" fill="#78350f">② 概念结构设计：E-R 图合并三类冲突（🔴）</text>
+  <g stroke="#fbbf24" fill="#fffbeb">
+    <rect x="20"  y="148" width="253" height="60" rx="6"/>
+    <rect x="284" y="148" width="253" height="60" rx="6"/>
+    <rect x="548" y="148" width="252" height="60" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#78350f">
+    <text x="146" y="168" font-size="12" font-weight="bold">属性冲突</text>
+    <text x="146" y="184" font-size="9.5">同一属性的类型/取值范围/</text>
+    <text x="146" y="197" font-size="9.5">数据单位在不同分E-R图不一致</text>
+    <text x="410" y="168" font-size="12" font-weight="bold">命名冲突</text>
+    <text x="410" y="184" font-size="9.5">同义不同名 / 同名不同义</text>
+    <text x="674" y="168" font-size="12" font-weight="bold">结构冲突</text>
+    <text x="674" y="184" font-size="9.5">同一对象一处是实体、</text>
+    <text x="674" y="197" font-size="9.5">另一处是属性</text>
+  </g>
+
+  <text x="20" y="234" font-size="11" fill="#374151">概念结构设计步骤：选择局部应用 → 逐一设计分 E-R 图 → E-R 图合并（解决以上三类冲突）</text>
+  <text x="20" y="254" font-size="11" fill="#374151">逻辑结构设计五步：E-R图转关系模式 → 规范化 → 确定完整性约束 → 确定用户视图 → 反规范化</text>
+
+  <defs>
+    <marker id="arrowR" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L7,4 L0,8 Z" fill="#dc2626"/>
+    </marker>
+  </defs>
+</svg>
