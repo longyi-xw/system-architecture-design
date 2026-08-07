@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="330" viewBox="0 0 820 330" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="330" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">信息安全五要素 · 网络安全措施目标（🔴 高频必考）</text>
+
+  <!-- ① 五要素 -->
+  <text x="20" y="48" font-size="13" font-weight="bold" fill="#7f1d1d">① 信息安全五要素</text>
+  <g stroke="#fca5a5" fill="#fee2e2">
+    <rect x="20"  y="56" width="150" height="50" rx="6"/>
+    <rect x="178" y="56" width="150" height="50" rx="6"/>
+    <rect x="336" y="56" width="150" height="50" rx="6"/>
+    <rect x="494" y="56" width="150" height="50" rx="6"/>
+    <rect x="652" y="56" width="148" height="50" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#7f1d1d">
+    <text x="95"  y="76" font-size="12" font-weight="bold">机密性</text>
+    <text x="95"  y="92" font-size="9">不暴露给未授权者</text>
+    <text x="253" y="76" font-size="12" font-weight="bold">完整性</text>
+    <text x="253" y="92" font-size="9">可判别是否被篡改</text>
+    <text x="411" y="76" font-size="12" font-weight="bold">可用性</text>
+    <text x="411" y="92" font-size="9">授权者需要时可访问</text>
+    <text x="569" y="76" font-size="12" font-weight="bold">可控性</text>
+    <text x="569" y="92" font-size="9">控制信息流向行为</text>
+    <text x="726" y="76" font-size="12" font-weight="bold">可审查性</text>
+    <text x="726" y="92" font-size="9">提供调查依据手段</text>
+  </g>
+
+  <line x1="20" y1="120" x2="800" y2="120" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ② 安全措施目标 -->
+  <text x="20" y="142" font-size="13" font-weight="bold" fill="#78350f">② 网络安全措施目标（五项，与五要素不是同一套）</text>
+  <g stroke="#fbbf24" fill="#fffbeb">
+    <rect x="20"  y="150" width="150" height="50" rx="6"/>
+    <rect x="178" y="150" width="150" height="50" rx="6"/>
+    <rect x="336" y="150" width="150" height="50" rx="6"/>
+    <rect x="494" y="150" width="150" height="50" rx="6"/>
+    <rect x="652" y="150" width="148" height="50" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#78350f">
+    <text x="95"  y="170" font-size="12" font-weight="bold">访问控制</text>
+    <text x="95"  y="186" font-size="9">有权做所声称的事</text>
+    <text x="253" y="170" font-size="12" font-weight="bold">认证</text>
+    <text x="253" y="186" font-size="9">身份与声称一致</text>
+    <text x="411" y="170" font-size="12" font-weight="bold">完整性</text>
+    <text x="411" y="186" font-size="9">收到=发送</text>
+    <text x="569" y="170" font-size="12" font-weight="bold">审计</text>
+    <text x="569" y="186" font-size="9">不可抵赖性</text>
+    <text x="726" y="170" font-size="12" font-weight="bold">保密</text>
+    <text x="726" y="186" font-size="9">敏感信息不被窃听</text>
+  </g>
+
+  <line x1="20" y1="214" x2="800" y2="214" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ③ 组成框架 -->
+  <text x="20" y="236" font-size="13" font-weight="bold" fill="#1e3a5f">③ 信息安全系统组成框架（三分技术，七分管理）</text>
+  <g stroke="#93c5fd" fill="#eff6ff">
+    <rect x="20"  y="244" width="253" height="60" rx="6"/>
+    <rect x="284" y="244" width="253" height="60" rx="6"/>
+    <rect x="548" y="244" width="252" height="60" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#1e3a5f">
+    <text x="146" y="264" font-size="12" font-weight="bold">技术体系</text>
+    <text x="146" y="282" font-size="9.5">基础安全设备·网络·操作</text>
+    <text x="146" y="295" font-size="9.5">系统·数据库·终端设备</text>
+    <text x="410" y="264" font-size="12" font-weight="bold">组织机构体系</text>
+    <text x="410" y="282" font-size="9.5">决策层→管理层→执行层</text>
+    <text x="674" y="264" font-size="12" font-weight="bold">管理体系</text>
+    <text x="674" y="282" font-size="9.5">法律管理·制度管理·</text>
+    <text x="674" y="295" font-size="9.5">培训管理</text>
+  </g>
+</svg>
