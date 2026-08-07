@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="470" viewBox="0 0 820 470" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="470" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">系统工程方法与生命周期全景</text>
+
+  <!-- ① 霍尔三维结构 -->
+  <text x="20" y="48" font-size="13" font-weight="bold" fill="#7f1d1d">① 霍尔三维结构（🔴 核心考点，2018 年真题）</text>
+
+  <text x="20" y="66" font-size="10.5" font-weight="bold" fill="#6b7280">时间维</text>
+  <g stroke="#fca5a5" fill="#fee2e2">
+    <rect x="70" y="56" width="102" height="24" rx="4"/>
+    <rect x="177" y="56" width="102" height="24" rx="4"/>
+    <rect x="284" y="56" width="102" height="24" rx="4"/>
+    <rect x="391" y="56" width="102" height="24" rx="4"/>
+    <rect x="498" y="56" width="102" height="24" rx="4"/>
+    <rect x="605" y="56" width="102" height="24" rx="4"/>
+    <rect x="712" y="56" width="88" height="24" rx="4"/>
+  </g>
+  <g text-anchor="middle" font-size="10" fill="#7f1d1d">
+    <text x="121" y="72">规划</text>
+    <text x="228" y="72">拟定方案</text>
+    <text x="335" y="72">研制</text>
+    <text x="442" y="72">生产</text>
+    <text x="549" y="72">安装</text>
+    <text x="656" y="72">运行</text>
+    <text x="756" y="72">更新</text>
+  </g>
+
+  <text x="20" y="98" font-size="10.5" font-weight="bold" fill="#6b7280">逻辑维</text>
+  <g stroke="#f87171" fill="#fecaca">
+    <rect x="70" y="88" width="102" height="24" rx="4"/>
+    <rect x="177" y="88" width="102" height="24" rx="4"/>
+    <rect x="284" y="88" width="102" height="24" rx="4"/>
+    <rect x="391" y="88" width="102" height="24" rx="4"/>
+    <rect x="498" y="88" width="102" height="24" rx="4"/>
+    <rect x="605" y="88" width="102" height="24" rx="4"/>
+    <rect x="712" y="88" width="88" height="24" rx="4"/>
+  </g>
+  <g text-anchor="middle" font-size="10" fill="#7f1d1d">
+    <text x="121" y="104">明确问题</text>
+    <text x="228" y="104">确定目标</text>
+    <text x="335" y="104">系统综合</text>
+    <text x="442" y="104">系统分析</text>
+    <text x="549" y="104">优化</text>
+    <text x="656" y="104">决策</text>
+    <text x="756" y="104">实施</text>
+  </g>
+
+  <text x="20" y="130" font-size="10.5" font-weight="bold" fill="#6b7280">知识维</text>
+  <g stroke="#ef4444" fill="#fca5a5">
+    <rect x="70" y="118" width="730" height="24" rx="4"/>
+  </g>
+  <text x="435" y="134" text-anchor="middle" font-size="10.5" fill="#7f1d1d">工程 · 医学 · 建筑 · 商业 · 法律 · 管理 · 社会科学 · 艺术 等各种知识和技能</text>
+
+  <line x1="20" y1="154" x2="800" y2="154" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ② 其他方法论 -->
+  <text x="20" y="176" font-size="13" font-weight="bold" fill="#1e3a5f">② 其他方法论（🟡 了解为主，未检索到确凿真题）</text>
+  <g stroke="#93c5fd" fill="#eff6ff">
+    <rect x="20"  y="184" width="190" height="44" rx="6"/>
+    <rect x="218" y="184" width="190" height="44" rx="6"/>
+    <rect x="416" y="184" width="190" height="44" rx="6"/>
+    <rect x="614" y="184" width="186" height="44" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#1e3a5f">
+    <text x="115" y="203" font-size="11.5" font-weight="bold">切克兰德方法</text>
+    <text x="115" y="219" font-size="9.5">认识问题…评估反馈 7 步</text>
+    <text x="313" y="203" font-size="11.5" font-weight="bold">并行工程</text>
+    <text x="313" y="219" font-size="9.5">设计并行 · 小组协同</text>
+    <text x="511" y="203" font-size="11.5" font-weight="bold">综合集成法</text>
+    <text x="511" y="219" font-size="9.5">定性+定量 · 宏微观统一</text>
+    <text x="707" y="203" font-size="11.5" font-weight="bold">WSR 系统方法</text>
+    <text x="707" y="219" font-size="9.5">物理·事理·人理</text>
+  </g>
+
+  <line x1="20" y1="246" x2="800" y2="246" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ③ 生命周期7阶段 -->
+  <text x="20" y="268" font-size="13" font-weight="bold" fill="#78350f">③ 系统工程生命周期（7 阶段）</text>
+  <g stroke="#fbbf24" fill="#fffbeb">
+    <rect x="20"  y="276" width="106" height="34" rx="6"/>
+    <rect x="133" y="276" width="106" height="34" rx="6"/>
+    <rect x="246" y="276" width="106" height="34" rx="6"/>
+    <rect x="359" y="276" width="106" height="34" rx="6"/>
+    <rect x="472" y="276" width="106" height="34" rx="6"/>
+    <rect x="585" y="276" width="106" height="34" rx="6"/>
+    <rect x="698" y="276" width="102" height="34" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="10.5" font-weight="bold" fill="#78350f">
+    <text x="73"  y="297">探索性研究</text>
+    <text x="186" y="297">概念</text>
+    <text x="299" y="297">开发</text>
+    <text x="412" y="297">生产</text>
+    <text x="525" y="297">使用</text>
+    <text x="638" y="297">保障</text>
+    <text x="749" y="297">退役</text>
+  </g>
+  <g stroke="#f59e0b" stroke-width="1.5" fill="none" marker-end="url(#arrowF)">
+    <path d="M 126 293 L 132 293"/>
+    <path d="M 239 293 L 245 293"/>
+    <path d="M 352 293 L 358 293"/>
+    <path d="M 465 293 L 471 293"/>
+    <path d="M 578 293 L 584 293"/>
+    <path d="M 691 293 L 697 293"/>
+  </g>
+  <text x="20" y="330" font-size="10.5" fill="#78350f">生命周期方法：计划驱动（文档完整/可追溯）· 渐进迭代 IID（需求不清时，适合小型系统）· 精益开发（消除浪费、创造价值）</text>
+
+  <line x1="20" y1="348" x2="800" y2="348" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ④ MBSE -->
+  <text x="20" y="370" font-size="13" font-weight="bold" fill="#14532d">④ MBSE 三大支柱（教程新增，⚠️ 未检索到近年真题）</text>
+  <g stroke="#6ee7b7" fill="#ecfdf5">
+    <rect x="20"  y="378" width="253" height="50" rx="6"/>
+    <rect x="284" y="378" width="253" height="50" rx="6"/>
+    <rect x="548" y="378" width="252" height="50" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#065f46">
+    <text x="146" y="398" font-size="12" font-weight="bold">建模语言</text>
+    <text x="146" y="416" font-size="10">SysML 统一系统工程建模语言</text>
+    <text x="410" y="404" font-size="12" font-weight="bold">建模工具</text>
+    <text x="674" y="404" font-size="12" font-weight="bold">建模思路</text>
+  </g>
+  <text x="20" y="450" font-size="11" fill="#374151">MBSE：建模方法的形式化应用，支持从概念性设计到全生命周期的需求/分析/设计/验证/确认活动</text>
+
+  <defs>
+    <marker id="arrowF" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L7,4 L0,8 Z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+</svg>
