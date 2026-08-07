@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="300" viewBox="0 0 820 300" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="300" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">软件架构复用 · DSSA 建立五阶段</text>
+
+  <!-- ① 复用类型 -->
+  <text x="20" y="48" font-size="13" font-weight="bold" fill="#7f1d1d">① 软件架构复用两类型（🔴）</text>
+  <g stroke="#fca5a5" fill="#fee2e2">
+    <rect x="20"  y="56" width="380" height="40" rx="6"/>
+    <rect x="420" y="56" width="380" height="40" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#7f1d1d">
+    <text x="210" y="72" font-size="12" font-weight="bold">机会复用</text>
+    <text x="210" y="88" font-size="9.5">开发中发现可复用资产就用（随缘）</text>
+    <text x="610" y="72" font-size="12" font-weight="bold">系统复用</text>
+    <text x="610" y="88" font-size="9.5">开发前规划好要复用什么（提前）</text>
+  </g>
+
+  <text x="20" y="118" font-size="10.5" fill="#78350f">复用基本过程：获取可复用资产 → 管理可复用资产 → 使用可复用资产</text>
+
+  <line x1="20" y1="134" x2="800" y2="134" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ② DSSA -->
+  <text x="20" y="156" font-size="13" font-weight="bold" fill="#1e3a5f">② DSSA 建立过程五阶段（🔴 螺旋式反复）</text>
+  <g stroke="#93c5fd" fill="#eff6ff">
+    <rect x="20"  y="164" width="150" height="50" rx="6"/>
+    <rect x="178" y="164" width="150" height="50" rx="6"/>
+    <rect x="336" y="164" width="150" height="50" rx="6"/>
+    <rect x="494" y="164" width="150" height="50" rx="6"/>
+    <rect x="652" y="164" width="148" height="50" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="10" font-weight="bold" fill="#1e3a5f">
+    <text x="95"  y="184">定义领域</text>
+    <text x="95"  y="198">范围</text>
+    <text x="253" y="184">定义领域</text>
+    <text x="253" y="198">特定元素</text>
+    <text x="411" y="184">定义设计</text>
+    <text x="411" y="198">实现约束</text>
+    <text x="569" y="184">定义领域</text>
+    <text x="569" y="198">模型与架构</text>
+    <text x="726" y="184">产生搜集</text>
+    <text x="726" y="198">可重用单元</text>
+  </g>
+  <g stroke="#3b82f6" stroke-width="1.5" fill="none" marker-end="url(#arrowV)">
+    <path d="M 170 189 L 177 189"/>
+    <path d="M 328 189 L 335 189"/>
+    <path d="M 486 189 L 493 189"/>
+    <path d="M 644 189 L 651 189"/>
+  </g>
+  <text x="410" y="234" text-anchor="middle" font-size="10.5" fill="#1e3a5f">↻ 并发·递归·反复（螺旋模型）——每个阶段可能要经历几遍，每次增加更多细节</text>
+
+  <line x1="20" y1="250" x2="800" y2="250" stroke="#e5e7eb" stroke-width="1"/>
+
+  <text x="20" y="272" font-size="10.5" fill="#374151">DSSA参与人员四类：领域专家 · 领域分析人员 · 领域设计人员 · 领域实现人员</text>
+  <text x="20" y="290" font-size="10.5" fill="#374151">DSSA获取三步骤：领域分析 → 领域设计 → 领域实现</text>
+
+  <defs>
+    <marker id="arrowV" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L7,4 L0,8 Z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+</svg>
