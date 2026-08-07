@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="420" viewBox="0 0 820 420" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="420" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">DFD 要素与错误 · BCE 三类 · 测试四阶段对应关系</text>
+
+  <!-- ① DFD -->
+  <text x="20" y="48" font-size="13" font-weight="bold" fill="#7f1d1d">① DFD 四要素 与 三种绘制错误（🔴）</text>
+  <g stroke="#fca5a5" fill="#fee2e2">
+    <rect x="20"  y="56" width="186" height="30" rx="5"/>
+    <rect x="218" y="56" width="186" height="30" rx="5"/>
+    <rect x="416" y="56" width="186" height="30" rx="5"/>
+    <rect x="614" y="56" width="186" height="30" rx="5"/>
+  </g>
+  <g text-anchor="middle" font-size="11.5" font-weight="bold" fill="#7f1d1d">
+    <text x="113" y="76">加工</text>
+    <text x="311" y="76">数据流</text>
+    <text x="509" y="76">数据存储</text>
+    <text x="707" y="76">外部实体</text>
+  </g>
+  <g stroke="#f87171" fill="#fecaca">
+    <rect x="20"  y="96" width="253" height="34" rx="5"/>
+    <rect x="284" y="96" width="253" height="34" rx="5"/>
+    <rect x="548" y="96" width="252" height="34" rx="5"/>
+  </g>
+  <g text-anchor="middle" font-size="11" font-weight="bold" fill="#7f1d1d">
+    <text x="146" y="112">黑洞</text>
+    <text x="146" y="126" font-size="9" font-weight="normal">有输入无输出</text>
+    <text x="410" y="112">奇迹</text>
+    <text x="410" y="126" font-size="9" font-weight="normal">有输出无输入</text>
+    <text x="674" y="112">灰洞</text>
+    <text x="674" y="126" font-size="9" font-weight="normal">加工不足以产生输出</text>
+  </g>
+  <text x="20" y="146" font-size="10.5" fill="#78350f">平衡原则：父图与子图输入输出必须一致；⚠️ 数据字典条目不包括外部实体（2015.11软件评测师真题）</text>
+
+  <line x1="20" y1="160" x2="800" y2="160" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ② BCE 三类 -->
+  <text x="20" y="182" font-size="13" font-weight="bold" fill="#1e3a5f">② 面向对象设计：边界类 · 控制类 · 实体类（BCE，🔴）</text>
+  <g stroke="#93c5fd" fill="#eff6ff">
+    <rect x="20"  y="190" width="253" height="56" rx="6"/>
+    <rect x="284" y="190" width="253" height="56" rx="6"/>
+    <rect x="548" y="190" width="252" height="56" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#1e3a5f">
+    <text x="146" y="210" font-size="12" font-weight="bold">边界类</text>
+    <text x="146" y="226" font-size="9.5">系统与外部交互接口</text>
+    <text x="146" y="239" font-size="9.5">如登录界面·Web页面</text>
+    <text x="410" y="210" font-size="12" font-weight="bold">控制类</text>
+    <text x="410" y="226" font-size="9.5">实现业务逻辑·控制流程</text>
+    <text x="410" y="239" font-size="9.5">如订单处理·认证控制器</text>
+    <text x="674" y="210" font-size="12" font-weight="bold">实体类</text>
+    <text x="674" y="226" font-size="9.5">业务数据及其操作</text>
+    <text x="674" y="239" font-size="9.5">如用户·产品·订单</text>
+  </g>
+  <text x="20" y="266" font-size="10.5" fill="#1e3a5f">⚠️ 易错点：边界类不负责存储业务数据（常见干扰项）</text>
+
+  <line x1="20" y1="280" x2="800" y2="280" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ③ 测试四阶段 -->
+  <text x="20" y="302" font-size="13" font-weight="bold" fill="#14532d">③ 测试四阶段：对象 → 依据文档（🔴 2015.11 架构真题，2022/2023 持续考）</text>
+  <g stroke="#6ee7b7" fill="#ecfdf5">
+    <rect x="20"  y="310" width="190" height="56" rx="6"/>
+    <rect x="218" y="310" width="190" height="56" rx="6"/>
+    <rect x="416" y="310" width="190" height="56" rx="6"/>
+    <rect x="614" y="310" width="186" height="56" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#065f46">
+    <text x="115" y="330" font-size="12" font-weight="bold">单元测试</text>
+    <text x="115" y="346" font-size="9.5">对象：独立模块</text>
+    <text x="115" y="359" font-size="9.5">依据：详细设计说明书</text>
+    <text x="313" y="330" font-size="12" font-weight="bold">集成测试</text>
+    <text x="313" y="346" font-size="9.5">对象：模块间接口</text>
+    <text x="313" y="359" font-size="9.5">依据：概要设计文档</text>
+    <text x="511" y="330" font-size="12" font-weight="bold">系统测试</text>
+    <text x="511" y="346" font-size="9.5">对象：完整系统+环境</text>
+    <text x="511" y="359" font-size="9.5">依据：用户需求规格说明书</text>
+    <text x="707" y="330" font-size="12" font-weight="bold">验收测试</text>
+    <text x="707" y="346" font-size="9.5">对象：是否满足业务需求</text>
+    <text x="707" y="359" font-size="9.5">依据：用户需求/验收标准</text>
+  </g>
+  <g stroke="#059669" stroke-width="1.5" fill="none" marker-end="url(#arrowN)">
+    <path d="M 210 338 L 217 338"/>
+    <path d="M 408 338 L 415 338"/>
+    <path d="M 606 338 L 613 338"/>
+  </g>
+
+  <text x="20" y="392" font-size="10.5" fill="#374151">黑盒测试→系统测试/验收测试常用；白盒测试→单元测试/集成测试常用；灰盒测试→集成测试常用</text>
+
+  <defs>
+    <marker id="arrowN" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L7,4 L0,8 Z" fill="#059669"/>
+    </marker>
+  </defs>
+</svg>
