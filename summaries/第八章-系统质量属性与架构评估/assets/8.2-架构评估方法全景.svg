@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="500" viewBox="0 0 820 500" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="500" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">系统架构评估全景</text>
+
+  <!-- 三类方法 -->
+  <text x="30" y="52" font-size="12.5" font-weight="bold" fill="#1f2937">🔴 评估三类方法</text>
+  <g stroke="#cbd5e1" fill="#f8fafc">
+    <rect x="30" y="60" width="240" height="46" rx="6"/>
+    <rect x="290" y="60" width="240" height="46" rx="6"/>
+    <rect x="550" y="60" width="240" height="46" rx="6"/>
+  </g>
+  <g font-size="11" fill="#334155" text-anchor="middle">
+    <text x="150" y="80" font-weight="bold">基于调查问卷/检查表</text>
+    <text x="150" y="96" font-size="9.5">定性，依赖评估人员主观推断</text>
+    <text x="410" y="80" font-weight="bold">基于场景</text>
+    <text x="410" y="96" font-size="9.5">分析架构对使用/修改活动的支持度</text>
+    <text x="670" y="80" font-weight="bold">基于度量</text>
+    <text x="670" y="96" font-size="9.5">建立质量属性↔度量映射并推导</text>
+  </g>
+
+  <!-- 重要概念 -->
+  <text x="30" y="132" font-size="12.5" font-weight="bold" fill="#1f2937">🔴 重要概念（8.2.1）</text>
+  <g stroke="#c4b5fd" fill="#f5f3ff">
+    <rect x="30" y="140" width="180" height="52" rx="6"/>
+    <rect x="220" y="140" width="180" height="52" rx="6"/>
+    <rect x="410" y="140" width="180" height="52" rx="6"/>
+    <rect x="600" y="140" width="190" height="52" rx="6"/>
+  </g>
+  <g font-size="10.5" fill="#4c1d95" text-anchor="middle">
+    <text x="120" y="158" font-weight="bold">敏感点</text>
+    <text x="120" y="174" font-size="9">构件/关系的特性</text>
+    <text x="310" y="158" font-weight="bold">权衡点</text>
+    <text x="310" y="174" font-size="9">多质量属性的敏感点</text>
+    <text x="500" y="158" font-weight="bold">风险承担者</text>
+    <text x="500" y="174" font-size="9">对架构施加影响的相关人</text>
+    <text x="695" y="158" font-weight="bold">场景</text>
+    <text x="695" y="174" font-size="9">与系统交互的简短描述</text>
+  </g>
+
+  <line x1="30" y1="210" x2="790" y2="210" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- 演进链 -->
+  <text x="30" y="234" font-size="12.5" font-weight="bold" fill="#1f2937">演进链：能不能改 → 怎么折中 → 划不划算</text>
+
+  <g stroke="#93c5fd" fill="#eff6ff"><rect x="30" y="244" width="230" height="72" rx="6"/></g>
+  <g fill="#1e3a5f">
+    <text x="145" y="264" text-anchor="middle" font-size="12" font-weight="bold">🟡 SAAM</text>
+    <text x="145" y="280" text-anchor="middle" font-size="9.5">最早的架构分析方法</text>
+    <text x="42" y="296" font-size="9">关注：可修改性</text>
+    <text x="42" y="310" font-size="9">场景开发→架构描述→单场景</text>
+  </g>
+
+  <g stroke="#fca5a5" fill="#fee2e2"><rect x="295" y="244" width="230" height="72" rx="6"/></g>
+  <g fill="#7f1d1d">
+    <text x="410" y="264" text-anchor="middle" font-size="12" font-weight="bold">🔴 ATAM</text>
+    <text x="410" y="280" text-anchor="middle" font-size="9.5">性能/可用性/安全性/可修改性</text>
+    <text x="307" y="296" font-size="9">效用树排优先级、找权衡</text>
+    <text x="307" y="310" font-size="9">9步骤/4阶段 → 见8.3</text>
+  </g>
+
+  <g stroke="#6ee7b7" fill="#ecfdf5"><rect x="560" y="244" width="230" height="72" rx="6"/></g>
+  <g fill="#14532d">
+    <text x="675" y="264" text-anchor="middle" font-size="12" font-weight="bold">🟡 CBAM</text>
+    <text x="675" y="280" text-anchor="middle" font-size="9.5">在ATAM上构建，算成本收益</text>
+    <text x="572" y="296" font-size="9">8步骤：整理场景…按ROI选策略</text>
+  </g>
+
+  <g stroke="#1f2937" stroke-width="1.5" fill="none" marker-end="url(#arrow82)">
+    <line x1="262" y1="280" x2="293" y2="280"/>
+    <line x1="527" y1="280" x2="558" y2="280"/>
+  </g>
+  <defs>
+    <marker id="arrow82" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#1f2937"/>
+    </marker>
+  </defs>
+
+  <line x1="30" y1="332" x2="790" y2="332" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- 效用树 -->
+  <text x="30" y="356" font-size="12.5" font-weight="bold" fill="#1f2937">🔴 ATAM 核心工具：效用树（检索补充，真题高频"填效用树"）</text>
+  <g text-anchor="middle" font-size="10.5" font-weight="bold">
+    <g stroke="#fbbf24" fill="#fffbeb"><rect x="60" y="368" width="140" height="34" rx="6"/></g>
+    <g stroke="#fbbf24" fill="#fffbeb"><rect x="250" y="368" width="140" height="34" rx="6"/></g>
+    <g stroke="#fbbf24" fill="#fffbeb"><rect x="440" y="368" width="140" height="34" rx="6"/></g>
+    <g stroke="#fbbf24" fill="#fffbeb"><rect x="630" y="368" width="150" height="34" rx="6"/></g>
+    <g fill="#78350f">
+      <text x="130" y="390">树根</text>
+      <text x="320" y="390">质量属性</text>
+      <text x="510" y="390">属性分类</text>
+      <text x="705" y="390">场景（叶子节点）</text>
+    </g>
+  </g>
+  <g stroke="#78350f" stroke-width="1.5" fill="none" marker-end="url(#arrow82b)">
+    <line x1="200" y1="385" x2="248" y2="385"/>
+    <line x1="390" y1="385" x2="438" y2="385"/>
+    <line x1="580" y1="385" x2="628" y2="385"/>
+  </g>
+  <defs>
+    <marker id="arrow82b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#78350f"/>
+    </marker>
+  </defs>
+
+  <text x="30" y="428" font-size="10.5" fill="#6b7280">辨析：敏感点是"单点特性"，权衡点是"多个质量属性共享的敏感点"</text>
+  <text x="30" y="448" font-size="10.5" fill="#6b7280">其他评估方法（🟢 原文自带定义）：SAEM（内外部质量属性两角度）、SAABNet（定性知识评估）、SACMM（图内核度量差异）</text>
+</svg>
