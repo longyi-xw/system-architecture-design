@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="460" viewBox="0 0 820 460" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="460" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">软件架构风格五大类（🔴 与第1章"架构风格5类"同一体系）</text>
+
+  <!-- ① 数据流 -->
+  <text x="20" y="48" font-size="12.5" font-weight="bold" fill="#7f1d1d">① 数据流风格</text>
+  <g stroke="#fca5a5" fill="#fee2e2">
+    <rect x="150" y="40" width="200" height="30" rx="5"/>
+    <rect x="360" y="40" width="200" height="30" rx="5"/>
+  </g>
+  <g text-anchor="middle" font-size="11" font-weight="bold" fill="#7f1d1d">
+    <text x="250" y="60">批处理风格</text>
+    <text x="460" y="60">管道-过滤器风格</text>
+  </g>
+
+  <!-- ② 调用返回 -->
+  <text x="20" y="92" font-size="12.5" font-weight="bold" fill="#1e3a5f">② 调用/返回风格</text>
+  <g stroke="#93c5fd" fill="#eff6ff">
+    <rect x="150" y="84" width="150" height="30" rx="5"/>
+    <rect x="308" y="84" width="150" height="30" rx="5"/>
+    <rect x="466" y="84" width="150" height="30" rx="5"/>
+    <rect x="624" y="84" width="176" height="30" rx="5"/>
+  </g>
+  <g text-anchor="middle" font-size="10" font-weight="bold" fill="#1e3a5f">
+    <text x="225" y="103">主程序/子程序</text>
+    <text x="383" y="103">面向对象</text>
+    <text x="541" y="103">层次型</text>
+    <text x="712" y="103">客户端/服务器(C/S)</text>
+  </g>
+
+  <!-- ③ 以数据为中心 -->
+  <text x="20" y="136" font-size="12.5" font-weight="bold" fill="#78350f">③ 以数据为中心</text>
+  <g stroke="#fbbf24" fill="#fffbeb">
+    <rect x="150" y="128" width="200" height="30" rx="5"/>
+    <rect x="360" y="128" width="200" height="30" rx="5"/>
+  </g>
+  <g text-anchor="middle" font-size="11" font-weight="bold" fill="#78350f">
+    <text x="250" y="148">仓库风格</text>
+    <text x="460" y="148">黑板风格</text>
+  </g>
+
+  <!-- ④ 虚拟机 -->
+  <text x="20" y="180" font-size="12.5" font-weight="bold" fill="#4c1d95">④ 虚拟机风格</text>
+  <g stroke="#c4b5fd" fill="#f5f3ff">
+    <rect x="150" y="172" width="200" height="30" rx="5"/>
+    <rect x="360" y="172" width="200" height="30" rx="5"/>
+  </g>
+  <g text-anchor="middle" font-size="11" font-weight="bold" fill="#4c1d95">
+    <text x="250" y="192">解释器风格</text>
+    <text x="460" y="192">规则系统风格</text>
+  </g>
+
+  <!-- ⑤ 独立构件 -->
+  <text x="20" y="224" font-size="12.5" font-weight="bold" fill="#14532d">⑤ 独立构件风格</text>
+  <g stroke="#6ee7b7" fill="#ecfdf5">
+    <rect x="150" y="216" width="200" height="30" rx="5"/>
+    <rect x="360" y="216" width="200" height="30" rx="5"/>
+  </g>
+  <g text-anchor="middle" font-size="11" font-weight="bold" fill="#14532d">
+    <text x="250" y="236">进程通信风格</text>
+    <text x="460" y="236">事件系统风格</text>
+  </g>
+
+  <line x1="20" y1="256" x2="800" y2="256" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- 详解区 -->
+  <text x="20" y="278" font-size="12" font-weight="bold" fill="#1f2937">要点速记</text>
+  <g font-size="10.5" fill="#374151">
+    <text x="20" y="298">管道-过滤器：过滤器处理数据、管道传输数据，输出即下一步输入</text>
+    <text x="20" y="316">C/S 两层="胖客户机瘦服务器"；三层C/S拆分表示层/功能层/数据层，"瘦客户机"</text>
+    <text x="20" y="334">仓库风格：独立构件主动操作中央数据（被动响应）</text>
+    <text x="20" y="352">黑板风格：适合非结构化问题，多知识源协同求解（典型：语音识别）</text>
+    <text x="20" y="370">解释器风格：靠虚拟机弥合语义差异，效率较低，典型例子是专家系统</text>
+    <text x="20" y="388">进程通信：连接件是消息传递（点到点/同步异步/RPC）</text>
+    <text x="20" y="406">事件系统：隐式调用，构件触发/广播事件，触发者不知道谁会响应</text>
+  </g>
+
+  <text x="20" y="440" font-size="10.5" fill="#6b7280">体系结构风格 = 一个词汇表 + 一组约束，定义一个"系统家族"</text>
+</svg>
