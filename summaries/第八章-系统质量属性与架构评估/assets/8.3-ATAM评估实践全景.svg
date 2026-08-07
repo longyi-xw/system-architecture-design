@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="420" viewBox="0 0 820 420" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="420" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">ATAM 评估实践：9 步骤 · 4 阶段（检索补充，⚠️ 原文仅图片）</text>
+  <text x="410" y="44" text-anchor="middle" font-size="10.5" fill="#9ca3af">口诀：演 → 调 → 测 → 报</text>
+
+  <!-- 阶段1 演示 -->
+  <g stroke="#93c5fd" fill="#eff6ff"><rect x="20" y="60" width="180" height="180" rx="8"/></g>
+  <rect x="20" y="60" width="180" height="30" rx="8" fill="#1e3a5f"/>
+  <text x="110" y="80" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">① 演示阶段</text>
+  <g font-size="10" fill="#1e3a5f">
+    <text x="32" y="108">1. 介绍 ATAM</text>
+    <text x="40" y="122" font-size="8.5">方法/流程/技术</text>
+    <text x="32" y="146">2. 介绍业务动机</text>
+    <text x="40" y="160" font-size="8.5">功能/干系人/目标</text>
+    <text x="32" y="184">3. 介绍架构</text>
+    <text x="40" y="198" font-size="8.5">展示如何满足需求</text>
+  </g>
+
+  <!-- 阶段2 调查和分析 -->
+  <g stroke="#fca5a5" fill="#fee2e2"><rect x="220" y="60" width="180" height="180" rx="8"/></g>
+  <rect x="220" y="60" width="180" height="30" rx="8" fill="#7f1d1d"/>
+  <text x="310" y="80" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">② 调查和分析</text>
+  <g font-size="10" fill="#7f1d1d">
+    <text x="232" y="108">4. 确定架构方法</text>
+    <text x="232" y="132">5. 生成效用树</text>
+    <text x="240" y="146" font-size="8.5">排质量属性优先级</text>
+    <text x="232" y="170">6. 分析架构方法</text>
+    <text x="240" y="184" font-size="8.5">找风险/非风险/</text>
+    <text x="240" y="196" font-size="8.5">敏感点/权衡点</text>
+  </g>
+
+  <!-- 阶段3 测试 -->
+  <g stroke="#fbbf24" fill="#fffbeb"><rect x="420" y="60" width="180" height="180" rx="8"/></g>
+  <rect x="420" y="60" width="180" height="30" rx="8" fill="#78350f"/>
+  <text x="510" y="80" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">③ 测试阶段</text>
+  <g font-size="10" fill="#78350f">
+    <text x="432" y="112">7. 头脑风暴</text>
+    <text x="440" y="126" font-size="8.5">用例/增长/探索场景</text>
+    <text x="440" y="140" font-size="8.5">与效用树场景比对</text>
+    <text x="432" y="168">8. 再次分析架构方法</text>
+    <text x="440" y="182" font-size="8.5">重复步骤6，用新场景</text>
+    <text x="440" y="196" font-size="8.5">验证</text>
+  </g>
+
+  <!-- 阶段4 报告 -->
+  <g stroke="#6ee7b7" fill="#ecfdf5"><rect x="620" y="60" width="180" height="180" rx="8"/></g>
+  <rect x="620" y="60" width="180" height="30" rx="8" fill="#14532d"/>
+  <text x="710" y="80" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">④ 报告阶段</text>
+  <g font-size="10" fill="#14532d">
+    <text x="632" y="112">9. 描述评估结果</text>
+    <text x="640" y="128" font-size="8.5">汇报效用树、场景、</text>
+    <text x="640" y="142" font-size="8.5">分析问题、风险与</text>
+    <text x="640" y="156" font-size="8.5">非风险、评估结论</text>
+  </g>
+
+  <g stroke="#9ca3af" stroke-width="1.5" fill="none" marker-end="url(#arrow83)">
+    <line x1="200" y1="150" x2="218" y2="150"/>
+    <line x1="400" y1="150" x2="418" y2="150"/>
+    <line x1="600" y1="150" x2="618" y2="150"/>
+  </g>
+  <defs>
+    <marker id="arrow83" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#9ca3af"/>
+    </marker>
+  </defs>
+
+  <line x1="20" y1="258" x2="800" y2="258" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="20" y="280" font-size="10.5" fill="#374151">步骤 6 与步骤 8 都是"分析架构方法"——同一动作跑两轮：第一轮用效用树场景，第二轮用头脑风暴新场景复核</text>
+  <text x="20" y="300" font-size="10.5" fill="#6b7280">⚠️ 另有"阶段0-3"（建立评估组/以架构为中心/以风险承担者为中心/后续阶段）的替代框架，与本图是否为教材同一处内容未确认</text>
+  <text x="20" y="320" font-size="10.5" fill="#6b7280">多来源交叉印证："9步骤4阶段"版本一致度更高，作为记忆主线</text>
+</svg>
