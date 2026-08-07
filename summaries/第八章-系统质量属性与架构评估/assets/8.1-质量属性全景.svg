@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="440" viewBox="0 0 820 440" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="440" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">软件系统质量属性全景</text>
+
+  <!-- 开发期 -->
+  <text x="30" y="56" font-size="13" font-weight="bold" fill="#1e3a5f">🔴 开发期质量属性（6 项）</text>
+  <g stroke="#93c5fd" fill="#eff6ff">
+    <rect x="30" y="66" width="360" height="150" rx="6"/>
+  </g>
+  <g font-size="12" fill="#1e3a5f">
+    <text x="48" y="92">易理解性 — 设计被开发人员理解的难易程度</text>
+    <text x="48" y="114">可扩展性 — 增加新功能的能力（灵活性）</text>
+    <text x="48" y="136">可重用性 — 重用系统/部分的难易程度</text>
+    <text x="48" y="158">可测试性 — 测试以证明满足需求规范的难易度</text>
+    <text x="48" y="180">可维护性 — 识别修改点并实施修改的难易度</text>
+    <text x="48" y="202">可移植性 — 转移到不同运行环境的难易度</text>
+  </g>
+
+  <!-- 运行期 -->
+  <text x="420" y="56" font-size="13" font-weight="bold" fill="#78350f">🔴 运行期质量属性（7 项）</text>
+  <g stroke="#fbbf24" fill="#fffbeb">
+    <rect x="420" y="66" width="370" height="150" rx="6"/>
+  </g>
+  <g font-size="12" fill="#78350f">
+    <text x="438" y="88">性能　安全性　可伸缩性</text>
+    <text x="438" y="112">互操作性　可靠性　可用性　鲁棒性</text>
+    <text x="438" y="140" font-size="10.5" fill="#92400e">（偏向"系统跑起来表现好不好"，</text>
+    <text x="438" y="158" font-size="10.5" fill="#92400e">与开发期"好不好改/好不好测"相对）</text>
+  </g>
+  <text x="438" y="190" font-size="10.5" fill="#92400e">面向架构评估还额外关注：</text>
+  <text x="438" y="208" font-size="10.5" fill="#92400e">功能性、可变性、互操作性（8.1.2）</text>
+
+  <line x1="30" y1="236" x2="790" y2="236" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- 质量属性场景六要素 -->
+  <text x="30" y="260" font-size="13" font-weight="bold" fill="#14532d">🔴 质量属性场景六要素（源-刺-境-品-应-量）</text>
+
+  <g font-size="11" font-weight="bold" text-anchor="middle">
+    <g stroke="#6ee7b7" fill="#ecfdf5">
+      <rect x="30" y="272" width="115" height="46" rx="6"/>
+      <rect x="155" y="272" width="115" height="46" rx="6"/>
+      <rect x="280" y="272" width="115" height="46" rx="6"/>
+      <rect x="405" y="272" width="115" height="46" rx="6"/>
+      <rect x="530" y="272" width="115" height="46" rx="6"/>
+      <rect x="655" y="272" width="135" height="46" rx="6"/>
+    </g>
+    <g fill="#14532d">
+      <text x="87" y="291">刺激源</text>
+      <text x="87" y="306" font-size="9" font-weight="normal">谁触发的</text>
+      <text x="212" y="291">刺激</text>
+      <text x="212" y="306" font-size="9" font-weight="normal">发生了什么</text>
+      <text x="337" y="291">环境</text>
+      <text x="337" y="306" font-size="9" font-weight="normal">什么条件下</text>
+      <text x="462" y="291">制品</text>
+      <text x="462" y="306" font-size="9" font-weight="normal">打在系统哪</text>
+      <text x="587" y="291">响应</text>
+      <text x="587" y="306" font-size="9" font-weight="normal">系统怎么做</text>
+      <text x="722" y="291">响应度量</text>
+      <text x="722" y="306" font-size="9" font-weight="normal">做得好不好</text>
+    </g>
+  </g>
+  <g stroke="#14532d" stroke-width="1.5" fill="none" marker-end="url(#arrow81)">
+    <line x1="145" y1="295" x2="153" y2="295"/>
+    <line x1="270" y1="295" x2="278" y2="295"/>
+    <line x1="395" y1="295" x2="403" y2="295"/>
+    <line x1="520" y1="295" x2="528" y2="295"/>
+    <line x1="645" y1="295" x2="653" y2="295"/>
+  </g>
+  <defs>
+    <marker id="arrow81" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#14532d"/>
+    </marker>
+  </defs>
+
+  <text x="30" y="350" font-size="11" fill="#374151">六要素 vs 3 要素：8.2.1"场景"定义用刺激/环境/响应三要素（简化版），与此处完整六要素表述不完全一致，⚠️ 存疑待核对</text>
+  <text x="30" y="372" font-size="10.5" fill="#6b7280">质量属性 = 系统可测量或可测试的属性，用来描述系统满足利益相关者需求的程度</text>
+  <text x="30" y="392" font-size="10.5" fill="#6b7280">6 种场景类型（原文仅列类型名）：可用性 / 可修改性 / 性能 / 可测试性 / 易用性 / 安全性质量属性场景</text>
+  <text x="30" y="414" font-size="10.5" fill="#6b7280">⚠️ 检索到"2024年上半年案例分析六要素考点分值12分"的转述，二手来源未核实真题原文，按有分值线索定 🔴</text>
+</svg>
