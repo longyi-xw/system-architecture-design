@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="300" viewBox="0 0 820 300" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="300" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">数据模型三要素 · 关系术语链 · 完整性约束三类</text>
+
+  <!-- ① 数据模型三要素 -->
+  <text x="20" y="48" font-size="13" font-weight="bold" fill="#7f1d1d">① 数据模型三要素（🔴）</text>
+  <g stroke="#fca5a5" fill="#fee2e2">
+    <rect x="20"  y="56" width="253" height="34" rx="6"/>
+    <rect x="284" y="56" width="253" height="34" rx="6"/>
+    <rect x="548" y="56" width="252" height="34" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="12" font-weight="bold" fill="#7f1d1d">
+    <text x="146" y="78">数据结构（长什么样）</text>
+    <text x="410" y="78">数据操作（能做什么）</text>
+    <text x="674" y="78">约束条件（不能做什么）</text>
+  </g>
+
+  <line x1="20" y1="104" x2="800" y2="104" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ② 关系术语链 -->
+  <text x="20" y="126" font-size="13" font-weight="bold" fill="#1e3a5f">② 关系术语链（🔴）</text>
+  <g stroke="#93c5fd" fill="#eff6ff">
+    <rect x="20"  y="134" width="150" height="40" rx="6"/>
+    <rect x="178" y="134" width="150" height="40" rx="6"/>
+    <rect x="336" y="134" width="150" height="40" rx="6"/>
+    <rect x="494" y="134" width="150" height="40" rx="6"/>
+    <rect x="652" y="134" width="148" height="40" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="10.5" font-weight="bold" fill="#1e3a5f">
+    <text x="95"  y="150">候选码</text>
+    <text x="95"  y="165" font-size="8.5" font-weight="normal">能唯一标识元组</text>
+    <text x="253" y="150">主码</text>
+    <text x="253" y="165" font-size="8.5" font-weight="normal">选定的候选码</text>
+    <text x="411" y="150">主属性</text>
+    <text x="411" y="165" font-size="8.5" font-weight="normal">在候选码中的属性</text>
+    <text x="569" y="150">外码</text>
+    <text x="569" y="165" font-size="8.5" font-weight="normal">别的表的码</text>
+    <text x="726" y="150">全码</text>
+    <text x="726" y="165" font-size="8.5" font-weight="normal">全部属性才是候选码</text>
+  </g>
+
+  <line x1="20" y1="192" x2="800" y2="192" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ③ 完整性约束 -->
+  <text x="20" y="214" font-size="13" font-weight="bold" fill="#78350f">③ 完整性约束三类（🔴）</text>
+  <g stroke="#fbbf24" fill="#fffbeb">
+    <rect x="20"  y="222" width="253" height="50" rx="6"/>
+    <rect x="284" y="222" width="253" height="50" rx="6"/>
+    <rect x="548" y="222" width="252" height="50" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#78350f">
+    <text x="146" y="242" font-size="12" font-weight="bold">实体完整性</text>
+    <text x="146" y="258" font-size="9.5">主键唯一且非空（管自己）</text>
+    <text x="410" y="242" font-size="12" font-weight="bold">参照完整性</text>
+    <text x="410" y="258" font-size="9.5">外码=主码或空（管别的表）</text>
+    <text x="674" y="242" font-size="12" font-weight="bold">用户定义完整性</text>
+    <text x="674" y="258" font-size="9.5">业务自定义规则</text>
+  </g>
+</svg>
