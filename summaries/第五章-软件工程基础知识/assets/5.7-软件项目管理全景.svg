@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="460" viewBox="0 0 820 460" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="460" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">软件项目管理：进度 · 配置 · 质量 · 风险</text>
+
+  <!-- ① 进度管理 -->
+  <text x="20" y="48" font-size="13" font-weight="bold" fill="#7f1d1d">① 进度管理（🔴 WBS）</text>
+  <g stroke="#fca5a5" fill="#fee2e2">
+    <rect x="20"  y="56" width="380" height="34" rx="6"/>
+  </g>
+  <text x="210" y="78" text-anchor="middle" font-size="12" font-weight="bold" fill="#7f1d1d">工作分解结构 WBS（任务分解层级/颗粒度）</text>
+  <g stroke="#f87171" fill="#fecaca">
+    <rect x="420" y="56" width="380" height="34" rx="6"/>
+  </g>
+  <text x="610" y="78" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#7f1d1d">任务活动图：PERT图 · 甘特图 · 关键路径法(CPM)</text>
+
+  <line x1="20" y1="104" x2="800" y2="104" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ② 配置管理 -->
+  <text x="20" y="126" font-size="13" font-weight="bold" fill="#78350f">② 配置管理（🔴 基线 Baseline）</text>
+  <g stroke="#fbbf24" fill="#fffbeb">
+    <rect x="20"  y="134" width="150" height="40" rx="6"/>
+    <rect x="178" y="134" width="150" height="40" rx="6"/>
+    <rect x="336" y="134" width="150" height="40" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="11" font-weight="bold" fill="#78350f">
+    <text x="95"  y="153">动态库</text>
+    <text x="95"  y="167" font-size="9" font-weight="normal">开发中·随便改</text>
+    <text x="253" y="153">受控库</text>
+    <text x="253" y="167" font-size="9" font-weight="normal">半成品·走流程改</text>
+    <text x="411" y="153">静态库</text>
+    <text x="411" y="167" font-size="9" font-weight="normal">已发布·基本不改</text>
+  </g>
+  <g stroke="#f59e0b" fill="#fef3c7">
+    <rect x="502" y="134" width="298" height="40" rx="6"/>
+  </g>
+  <text x="651" y="153" text-anchor="middle" font-size="11" font-weight="bold" fill="#78350f">基线 = 配置项经正式评审后的受控状态</text>
+  <text x="651" y="167" text-anchor="middle" font-size="9" fill="#78350f">变更控制：申请→评审(CCB)→实施→验证</text>
+
+  <line x1="20" y1="192" x2="800" y2="192" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ③ 质量管理 -->
+  <text x="20" y="214" font-size="13" font-weight="bold" fill="#1e3a5f">③ 质量管理</text>
+  <g stroke="#93c5fd" fill="#eff6ff">
+    <rect x="20"  y="222" width="386" height="40" rx="6"/>
+    <rect x="414" y="222" width="386" height="40" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#1e3a5f">
+    <text x="213" y="241" font-size="11.5" font-weight="bold">SQA 软件质量保证</text>
+    <text x="213" y="256" font-size="9.5">审计与评审·SQA报告·处理不符合问题</text>
+    <text x="607" y="241" font-size="11.5" font-weight="bold">质量认证：ISO9000 vs CMM</text>
+    <text x="607" y="256" font-size="9.5">通用质量体系 vs 软件过程成熟度</text>
+  </g>
+
+  <line x1="20" y1="280" x2="800" y2="280" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ④ 风险管理 -->
+  <text x="20" y="302" font-size="13" font-weight="bold" fill="#14532d">④ 风险管理（🔴 原文空白，检索补全）</text>
+  <g stroke="#6ee7b7" fill="#ecfdf5">
+    <rect x="20"  y="310" width="126" height="34" rx="5"/>
+    <rect x="152" y="310" width="126" height="34" rx="5"/>
+    <rect x="284" y="310" width="126" height="34" rx="5"/>
+  </g>
+  <g text-anchor="middle" font-size="11" font-weight="bold" fill="#065f46">
+    <text x="83"  y="331">风险识别</text>
+    <text x="215" y="331">风险评估</text>
+    <text x="347" y="331">风险监控</text>
+  </g>
+  <g stroke="#059669" stroke-width="1.5" fill="none" marker-end="url(#arrowP)">
+    <path d="M 146 327 L 151 327"/>
+    <path d="M 278 327 L 283 327"/>
+  </g>
+
+  <text x="20" y="366" font-size="11.5" font-weight="bold" fill="#065f46">风险应对四策略</text>
+  <g stroke="#34d399" fill="#d1fae5">
+    <rect x="150" y="352" width="120" height="30" rx="5"/>
+    <rect x="278" y="352" width="120" height="30" rx="5"/>
+    <rect x="406" y="352" width="120" height="30" rx="5"/>
+    <rect x="534" y="352" width="120" height="30" rx="5"/>
+  </g>
+  <g text-anchor="middle" font-size="10.5" font-weight="bold" fill="#065f46">
+    <text x="210" y="371">规避</text>
+    <text x="338" y="371">转移</text>
+    <text x="466" y="371">减轻</text>
+    <text x="594" y="371">接受</text>
+  </g>
+
+  <text x="20" y="404" font-size="11.5" font-weight="bold" fill="#065f46">风险三类型</text>
+  <g stroke="#34d399" fill="#d1fae5">
+    <rect x="150" y="390" width="150" height="30" rx="5"/>
+    <rect x="310" y="390" width="150" height="30" rx="5"/>
+    <rect x="470" y="390" width="150" height="30" rx="5"/>
+  </g>
+  <g text-anchor="middle" font-size="10.5" font-weight="bold" fill="#065f46">
+    <text x="225" y="409">项目风险</text>
+    <text x="385" y="409">技术风险</text>
+    <text x="545" y="409">商业风险</text>
+  </g>
+
+  <defs>
+    <marker id="arrowP" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L7,4 L0,8 Z" fill="#059669"/>
+    </marker>
+  </defs>
+</svg>
