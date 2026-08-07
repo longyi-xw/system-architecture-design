@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="300" viewBox="0 0 820 300" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="300" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">关系运算 · 规范化递进（1NF → BCNF）</text>
+
+  <!-- ① 关系运算 -->
+  <text x="20" y="48" font-size="13" font-weight="bold" fill="#7f1d1d">① 核心关系运算</text>
+  <g stroke="#fca5a5" fill="#fee2e2">
+    <rect x="20"  y="56" width="253" height="40" rx="6"/>
+    <rect x="284" y="56" width="253" height="40" rx="6"/>
+    <rect x="548" y="56" width="252" height="40" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#7f1d1d">
+    <text x="146" y="76" font-size="13" font-weight="bold">投影 π</text>
+    <text x="146" y="90" font-size="10">垂直方向·选列</text>
+    <text x="410" y="76" font-size="13" font-weight="bold">选择 σ</text>
+    <text x="410" y="90" font-size="10">水平方向·选行</text>
+    <text x="674" y="76" font-size="13" font-weight="bold">连接 ∞</text>
+    <text x="674" y="90" font-size="10">跨表关联</text>
+  </g>
+  <text x="20" y="118" font-size="10.5" fill="#6b7280">其余：并·差·交·笛卡尔积（集合运算符）｜除·广义投影·外连接·聚集函数</text>
+
+  <line x1="20" y1="134" x2="800" y2="134" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ② 规范化递进 -->
+  <text x="20" y="156" font-size="13" font-weight="bold" fill="#78350f">② 规范化递进链</text>
+  <g font-size="11" text-anchor="middle">
+    <rect x="20"  y="164" width="186" height="56" rx="6" fill="#fef3c7" stroke="#fcd34d"/>
+    <rect x="222" y="164" width="186" height="56" rx="6" fill="#fde68a" stroke="#fbbf24"/>
+    <rect x="424" y="164" width="186" height="56" rx="6" fill="#fcd34d" stroke="#f59e0b"/>
+    <rect x="626" y="164" width="174" height="56" rx="6" fill="#f59e0b" stroke="#d97706"/>
+  </g>
+  <g text-anchor="middle" font-size="13" font-weight="bold" fill="#78350f">
+    <text x="113" y="186">1NF</text>
+    <text x="315" y="186">2NF</text>
+    <text x="517" y="186">3NF</text>
+    <text x="713" y="186">BCNF</text>
+  </g>
+  <g text-anchor="middle" font-size="9" fill="#78350f">
+    <text x="113" y="202">属性原子化</text>
+    <text x="315" y="202">消除部分依赖</text>
+    <text x="517" y="202">消除传递依赖</text>
+    <text x="713" y="202">主属性也不例外</text>
+  </g>
+  <g stroke="#d97706" stroke-width="1.5" fill="none" marker-end="url(#arrowQ)">
+    <path d="M 206 192 L 221 192"/>
+    <path d="M 408 192 L 423 192"/>
+    <path d="M 610 192 L 625 192"/>
+  </g>
+
+  <text x="20" y="248" font-size="11" fill="#374151">函数依赖 X→Y：X 一样，Y 就必须一样（要求关系模式任何可能的 r 都满足，不能只看某一时刻）</text>
+  <text x="20" y="268" font-size="11" fill="#374151">多值依赖 X→→Y：给定 x 值，对应一组只由 x 决定、与其余属性无关的 Y 值</text>
+
+  <defs>
+    <marker id="arrowQ" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L7,4 L0,8 Z" fill="#d97706"/>
+    </marker>
+  </defs>
+</svg>
