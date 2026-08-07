@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="360" viewBox="0 0 820 360" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="360" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">应用接口四层 · NoSQL 四分类 · NoSQL 体系框架</text>
+
+  <!-- ① 应用接口 -->
+  <text x="20" y="48" font-size="13" font-weight="bold" fill="#1e3a5f">① 应用程序与数据库交互接口</text>
+  <g stroke="#93c5fd" fill="#eff6ff">
+    <rect x="20"  y="56" width="186" height="40" rx="6"/>
+    <rect x="218" y="56" width="186" height="40" rx="6"/>
+  </g>
+  <g stroke="#fca5a5" fill="#fee2e2">
+    <rect x="416" y="56" width="186" height="40" rx="6"/>
+    <rect x="614" y="56" width="186" height="40" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="11" font-weight="bold">
+    <text x="113" y="72" fill="#1e3a5f">库函数级别</text>
+    <text x="113" y="86" font-size="9" font-weight="normal" fill="#1e3a5f">最底层，各家不同</text>
+    <text x="311" y="72" fill="#1e3a5f">嵌入SQL</text>
+    <text x="311" y="86" font-size="9" font-weight="normal" fill="#1e3a5f">SQL写进源代码</text>
+    <text x="509" y="72" fill="#7f1d1d">ODBC</text>
+    <text x="509" y="86" font-size="9" font-weight="normal" fill="#7f1d1d">统一标准·跨数据库</text>
+    <text x="707" y="72" fill="#7f1d1d">ORM</text>
+    <text x="707" y="86" font-size="9" font-weight="normal" fill="#7f1d1d">对象关系映射</text>
+  </g>
+
+  <line x1="20" y1="112" x2="800" y2="112" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ② NoSQL四分类 -->
+  <text x="20" y="134" font-size="13" font-weight="bold" fill="#78350f">② NoSQL 四分类（不保证 ACID）</text>
+  <g stroke="#fbbf24" fill="#fffbeb">
+    <rect x="20"  y="142" width="190" height="56" rx="6"/>
+    <rect x="218" y="142" width="190" height="56" rx="6"/>
+    <rect x="416" y="142" width="190" height="56" rx="6"/>
+    <rect x="614" y="142" width="186" height="56" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#78350f">
+    <text x="115" y="162" font-size="12" font-weight="bold">列式存储</text>
+    <text x="115" y="178" font-size="9">Cassandra·HBase</text>
+    <text x="115" y="190" font-size="9">Riak</text>
+    <text x="313" y="162" font-size="12" font-weight="bold">键值对存储</text>
+    <text x="313" y="178" font-size="9">Redis·Voldemort</text>
+    <text x="313" y="190" font-size="9">Tokyo Cabinet</text>
+    <text x="511" y="162" font-size="12" font-weight="bold">文档型</text>
+    <text x="511" y="178" font-size="9">MongoDB·CouchDB</text>
+    <text x="511" y="190" font-size="9">SequoiaDB</text>
+    <text x="707" y="162" font-size="12" font-weight="bold">图数据库</text>
+    <text x="707" y="178" font-size="9">Neo4J·InfoGrid</text>
+    <text x="707" y="190" font-size="9">Infinite Graph</text>
+  </g>
+  <text x="20" y="216" font-size="10.5" fill="#78350f">共同特征：易扩展 · 大数据量高性能 · 灵活数据模型 · 高可用</text>
+
+  <line x1="20" y1="232" x2="800" y2="232" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ③ NoSQL体系框架 -->
+  <text x="20" y="254" font-size="13" font-weight="bold" fill="#14532d">③ NoSQL 体系框架（四层，由下至上）</text>
+  <g stroke="#6ee7b7" fill="#ecfdf5">
+    <rect x="20"  y="262" width="186" height="40" rx="6"/>
+    <rect x="218" y="262" width="186" height="40" rx="6"/>
+    <rect x="416" y="262" width="186" height="40" rx="6"/>
+    <rect x="614" y="262" width="186" height="40" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="11" font-weight="bold" fill="#065f46">
+    <text x="113" y="286">数据持久层</text>
+    <text x="311" y="286">数据分布层</text>
+    <text x="509" y="286">数据逻辑层模型</text>
+    <text x="707" y="286">接口层</text>
+  </g>
+  <g stroke="#059669" stroke-width="1.5" fill="none" marker-end="url(#arrowS)">
+    <path d="M 206 282 L 217 282"/>
+    <path d="M 404 282 L 415 282"/>
+    <path d="M 602 282 L 613 282"/>
+  </g>
+  <text x="20" y="330" font-size="10.5" fill="#374151">怎么存盘 → 怎么分片 → 数据长什么样 → 怎么被调用</text>
+
+  <defs>
+    <marker id="arrowS" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L7,4 L0,8 Z" fill="#059669"/>
+    </marker>
+  </defs>
+</svg>
