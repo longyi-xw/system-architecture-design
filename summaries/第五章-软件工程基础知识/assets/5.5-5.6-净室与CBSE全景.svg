@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="320" viewBox="0 0 820 320" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="320" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">净室软件工程 · 基于构件的软件工程（CBSE）</text>
+
+  <!-- ① 净室 -->
+  <text x="20" y="48" font-size="13" font-weight="bold" fill="#7f1d1d">① 净室软件工程技术手段</text>
+  <g stroke="#93c5fd" fill="#eff6ff">
+    <rect x="20"  y="56" width="186" height="40" rx="6"/>
+    <rect x="218" y="56" width="186" height="40" rx="6"/>
+    <rect x="614" y="56" width="186" height="40" rx="6"/>
+  </g>
+  <g stroke="#fca5a5" fill="#fee2e2">
+    <rect x="416" y="56" width="186" height="40" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="11" font-weight="bold">
+    <text x="113" y="80" fill="#1e3a5f">统计过程控制</text>
+    <text x="311" y="80" fill="#1e3a5f">基于函数的规范设计</text>
+    <text x="509" y="80" fill="#7f1d1d">正确性验证 🔴</text>
+    <text x="707" y="80" fill="#1e3a5f">统计测试和软件认证</text>
+  </g>
+  <text x="20" y="116" font-size="10.5" fill="#78350f">核心理念：用数学正确性验证代替测试，作为发现/排除错误的主要机制（"一开始就造对"）</text>
+  <text x="20" y="134" font-size="10.5" fill="#6b7280">应用：航空航天·医疗设备·核电监控等高可靠性领域（⚠️检索补充）</text>
+
+  <line x1="20" y1="150" x2="800" y2="150" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ② CBSE 过程 -->
+  <text x="20" y="172" font-size="13" font-weight="bold" fill="#1e3a5f">② CBSE 过程（六步骤）</text>
+  <g stroke="#93c5fd" fill="#eff6ff">
+    <rect x="20"  y="180" width="126" height="40" rx="5"/>
+    <rect x="152" y="180" width="126" height="40" rx="5"/>
+    <rect x="284" y="180" width="126" height="40" rx="5"/>
+    <rect x="416" y="180" width="126" height="40" rx="5"/>
+    <rect x="548" y="180" width="126" height="40" rx="5"/>
+    <rect x="680" y="180" width="120" height="40" rx="5"/>
+  </g>
+  <g text-anchor="middle" font-size="9.5" font-weight="bold" fill="#1e3a5f">
+    <text x="83"  y="196">系统需求</text>
+    <text x="83"  y="208">概览</text>
+    <text x="215" y="196">识别候选</text>
+    <text x="215" y="208">构件</text>
+    <text x="347" y="196">根据构件</text>
+    <text x="347" y="208">修改需求</text>
+    <text x="479" y="196">体系结构</text>
+    <text x="479" y="208">设计</text>
+    <text x="611" y="196">构件定制</text>
+    <text x="611" y="208">与适配</text>
+    <text x="740" y="202">组装构件</text>
+  </g>
+  <g stroke="#3b82f6" stroke-width="1.5" fill="none" marker-end="url(#arrowO)">
+    <path d="M 146 200 L 151 200"/>
+    <path d="M 278 200 L 283 200"/>
+    <path d="M 410 200 L 415 200"/>
+    <path d="M 542 200 L 547 200"/>
+    <path d="M 674 200 L 679 200"/>
+  </g>
+
+  <line x1="20" y1="238" x2="800" y2="238" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- ③ 构件组装三方式 -->
+  <text x="20" y="260" font-size="13" font-weight="bold" fill="#78350f">③ 构件组装三方式（🔴 2023年11月真题原题）</text>
+  <g stroke="#fbbf24" fill="#fffbeb">
+    <rect x="20"  y="268" width="253" height="40" rx="6"/>
+    <rect x="284" y="268" width="253" height="40" rx="6"/>
+    <rect x="548" y="268" width="252" height="40" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="13" font-weight="bold" fill="#78350f">
+    <text x="146" y="292">顺序组装</text>
+    <text x="410" y="292">层次组装</text>
+    <text x="674" y="292">叠加组装</text>
+  </g>
+
+  <defs>
+    <marker id="arrowO" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L7,4 L0,8 Z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+</svg>
