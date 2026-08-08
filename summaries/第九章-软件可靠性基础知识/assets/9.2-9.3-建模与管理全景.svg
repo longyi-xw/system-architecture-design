@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="520" viewBox="0 0 820 520" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="520" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">软件可靠性建模（9.2）与管理（9.3）全景</text>
+
+  <!-- 三假设 -->
+  <text x="30" y="52" font-size="12.5" font-weight="bold" fill="#4c1d95">🔴 建模三共同假设「代 · 独 · 同」</text>
+  <g stroke="#c4b5fd" fill="#f5f3ff">
+    <rect x="30" y="60" width="245" height="48" rx="6"/>
+    <rect x="288" y="60" width="245" height="48" rx="6"/>
+    <rect x="546" y="60" width="244" height="48" rx="6"/>
+  </g>
+  <g font-size="10.5" fill="#4c1d95" text-anchor="middle">
+    <text x="152" y="80" font-weight="bold">代表性假设</text>
+    <text x="152" y="98" font-size="9.5">测试用例代表实际运行剖面</text>
+    <text x="410" y="80" font-weight="bold">独立性假设</text>
+    <text x="410" y="98" font-size="9.5">失效独立发生于不同时刻</text>
+    <text x="668" y="80" font-weight="bold">相同性假设</text>
+    <text x="668" y="98" font-size="9.5">所有失效的后果等级相同</text>
+  </g>
+
+  <!-- 影响因素 -->
+  <text x="30" y="134" font-size="12.5" font-weight="bold" fill="#7f1d1d">🔴 影响软件可靠性的五因素（原文唯一原生内容）</text>
+  <g stroke="#fca5a5" fill="#fee2e2">
+    <rect x="30" y="142" width="145" height="52" rx="6"/>
+    <rect x="185" y="142" width="145" height="52" rx="6"/>
+    <rect x="340" y="142" width="145" height="52" rx="6"/>
+    <rect x="495" y="142" width="145" height="52" rx="6"/>
+    <rect x="650" y="142" width="140" height="52" rx="6"/>
+  </g>
+  <g font-size="10" fill="#7f1d1d" text-anchor="middle">
+    <text x="102" y="162" font-weight="bold">运行剖面</text>
+    <text x="102" y="178" font-size="8.5">同一软件不同环境</text>
+    <text x="102" y="190" font-size="8.5">可靠性表现不同</text>
+    <text x="257" y="162" font-weight="bold">软件规模</text>
+    <text x="257" y="178" font-size="8.5">数十行 vs 数万行</text>
+    <text x="257" y="190" font-size="8.5">不能相提并论</text>
+    <text x="412" y="162" font-weight="bold">内部结构</text>
+    <text x="412" y="178" font-size="8.5">越复杂缺陷可能</text>
+    <text x="412" y="190" font-size="8.5">越多</text>
+    <text x="567" y="162" font-weight="bold">开发方法/环境</text>
+    <text x="567" y="178" font-size="8.5">结构化方法明显</text>
+    <text x="567" y="190" font-size="8.5">减少缺陷数</text>
+    <text x="720" y="162" font-weight="bold">可靠性投入</text>
+    <text x="720" y="178" font-size="8.5">早期重视，可靠性</text>
+    <text x="720" y="190" font-size="8.5">有明显提高</text>
+  </g>
+  <text x="30" y="210" font-size="9.5" fill="#9ca3af">前三个 = 软件本身长什么样　｜　后两个 = 人怎么做的</text>
+
+  <line x1="30" y1="226" x2="790" y2="226" stroke="#e5e7eb"/>
+
+  <!-- 六阶段可靠性活动 -->
+  <text x="30" y="250" font-size="12.5" font-weight="bold" fill="#14532d">🔴 软件工程六阶段的可靠性活动 — 抓「首次出现」的标志性动作</text>
+
+  <g font-size="10.5" text-anchor="middle">
+    <g stroke="#6ee7b7" fill="#ecfdf5">
+      <rect x="30" y="262" width="120" height="62" rx="6"/>
+      <rect x="162" y="262" width="120" height="62" rx="6"/>
+      <rect x="294" y="262" width="120" height="62" rx="6"/>
+      <rect x="426" y="262" width="120" height="62" rx="6"/>
+      <rect x="558" y="262" width="120" height="62" rx="6"/>
+      <rect x="690" y="262" width="100" height="62" rx="6"/>
+    </g>
+    <g fill="#14532d">
+      <text x="90" y="280" font-weight="bold">① 需求分析</text>
+      <text x="90" y="300" font-size="9.5">确定可靠性</text>
+      <text x="90" y="314" font-size="9.5" font-weight="bold">目标</text>
+
+      <text x="222" y="280" font-weight="bold">② 概要设计</text>
+      <text x="222" y="300" font-size="9.5">确定可靠性</text>
+      <text x="222" y="314" font-size="9.5" font-weight="bold">度量</text>
+
+      <text x="354" y="280" font-weight="bold">③ 详细设计</text>
+      <text x="354" y="300" font-size="9.5">可靠性</text>
+      <text x="354" y="314" font-size="9.5" font-weight="bold">预测</text>
+
+      <text x="486" y="280" font-weight="bold">④ 编码</text>
+      <text x="486" y="300" font-size="9.5">可靠性测试</text>
+      <text x="486" y="314" font-size="9.5" font-weight="bold">（含单元测试）</text>
+
+      <text x="618" y="280" font-weight="bold">⑤ 测试</text>
+      <text x="618" y="300" font-size="9.5" font-weight="bold">建模 + 评价</text>
+      <text x="618" y="314" font-size="9.5">（集成/系统测试）</text>
+
+      <text x="740" y="280" font-weight="bold">⑥ 实施</text>
+      <text x="740" y="300" font-size="9.5" font-weight="bold">调整模型</text>
+      <text x="740" y="314" font-size="9.5">（验收测试）</text>
+    </g>
+  </g>
+  <g stroke="#14532d" stroke-width="1.5" fill="none" marker-end="url(#arrow93)">
+    <line x1="150" y1="293" x2="160" y2="293"/>
+    <line x1="282" y1="293" x2="292" y2="293"/>
+    <line x1="414" y1="293" x2="424" y2="293"/>
+    <line x1="546" y1="293" x2="556" y2="293"/>
+    <line x1="678" y1="293" x2="688" y2="293"/>
+  </g>
+  <defs>
+    <marker id="arrow93" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#14532d"/>
+    </marker>
+  </defs>
+
+  <text x="30" y="344" font-size="10" fill="#6b7280">背景动作（几乎每阶段都有，不用于区分阶段）：收集可靠性数据 · 调整可靠性活动计划 · 编制可靠性文档</text>
+
+  <line x1="30" y1="360" x2="790" y2="360" stroke="#e5e7eb"/>
+
+  <!-- 模型分类 -->
+  <text x="30" y="384" font-size="12.5" font-weight="bold" fill="#78350f">🟢 软件可靠性模型 10 类（了解名称即可）</text>
+  <g font-size="10" fill="#78350f">
+    <text x="30" y="406">① 种子法（捕获-再捕获）　② 失效率类　③ 曲线拟合类（回归分析）　④ 可靠性增长（Duane/Weibull）</text>
+    <text x="30" y="428">⑤ 程序结构分析（模块调用网络）　⑥ 输入域分类（Nelson）　⑦ 执行路径分析（逻辑路径概率）</text>
+    <text x="30" y="450">⑧ 非齐次泊松过程（Musa/Goel）　⑨ 马尔可夫过程（线性死亡模型）　⑩ 贝叶斯模型（先验分布+测试信息）</text>
+  </g>
+
+  <text x="30" y="480" font-size="10.5" fill="#6b7280">模型定义：为预计或估算软件可靠性所建立的可靠性框图和数学模型 → 把复杂系统的可靠性逐级分解为简单系统的可靠性</text>
+  <text x="30" y="500" font-size="10.5" fill="#6b7280">模型四组成：模型假设 · 性能度量 · 参数估计方法 · 数据要求　　⚠️ 9.2 除"五因素"外全部为检索补充</text>
+</svg>
