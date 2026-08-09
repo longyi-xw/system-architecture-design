@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="480" viewBox="0 0 820 480" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="480" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">面向对象软件架构演化过程（结合 UML 顺序图）</text>
+
+  <!-- 10.1 生命周期 -->
+  <text x="20" y="52" font-size="12" font-weight="bold" fill="#4c1d95">🔴 10.1 演化 = 软件整体结构的演化，涵盖架构全生命周期</text>
+  <g font-size="9.5" text-anchor="middle">
+    <g stroke="#c4b5fd" fill="#f5f3ff">
+      <rect x="20" y="60" width="146" height="28" rx="5"/>
+      <rect x="176" y="60" width="146" height="28" rx="5"/>
+      <rect x="332" y="60" width="146" height="28" rx="5"/>
+      <rect x="488" y="60" width="146" height="28" rx="5"/>
+      <rect x="644" y="60" width="156" height="28" rx="5"/>
+    </g>
+    <g fill="#4c1d95" font-weight="bold">
+      <text x="93" y="78">架构需求获取</text>
+      <text x="249" y="78">架构建模</text>
+      <text x="405" y="78">架构文档</text>
+      <text x="561" y="78">架构实现</text>
+      <text x="722" y="78">架构维护</text>
+    </g>
+  </g>
+  <g stroke="#7c3aed" stroke-width="1.3" fill="none" marker-end="url(#a10)">
+    <line x1="166" y1="74" x2="174" y2="74"/><line x1="322" y1="74" x2="330" y2="74"/>
+    <line x1="478" y1="74" x2="486" y2="74"/><line x1="634" y1="74" x2="642" y2="74"/>
+  </g>
+  <defs><marker id="a10" markerWidth="7" markerHeight="7" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#7c3aed"/></marker></defs>
+
+  <line x1="20" y1="102" x2="800" y2="102" stroke="#e5e7eb"/>
+
+  <!-- 顺序图示意 -->
+  <text x="20" y="124" font-size="12" font-weight="bold" fill="#1f2937">10.2 四类演化 —— 看「顺序图里的什么东西在变」</text>
+
+  <!-- 左侧顺序图 -->
+  <g stroke="#cbd5e1" fill="#f8fafc"><rect x="20" y="134" width="250" height="200" rx="8"/></g>
+  <text x="145" y="152" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#475569">UML 顺序图</text>
+  <!-- 对象框 -->
+  <g stroke="#3b82f6" fill="#dbeafe">
+    <rect x="46" y="162" width="60" height="22" rx="3"/>
+    <rect x="186" y="162" width="60" height="22" rx="3"/>
+  </g>
+  <g font-size="9" text-anchor="middle" fill="#1e3a5f" font-weight="bold">
+    <text x="76" y="177">对象 A</text>
+    <text x="216" y="177">对象 B</text>
+  </g>
+  <!-- 生命线 -->
+  <g stroke="#94a3b8" stroke-dasharray="3,3">
+    <line x1="76" y1="184" x2="76" y2="322"/>
+    <line x1="216" y1="184" x2="216" y2="322"/>
+  </g>
+  <!-- 消息箭头 -->
+  <g stroke="#059669" stroke-width="1.6" fill="none" marker-end="url(#msg10)">
+    <line x1="76" y1="206" x2="212" y2="206"/>
+    <line x1="216" y1="240" x2="80" y2="240"/>
+  </g>
+  <defs><marker id="msg10" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 Z" fill="#059669"/></marker></defs>
+  <text x="144" y="201" text-anchor="middle" font-size="8.5" fill="#065f46">消息（连接件）</text>
+  <!-- 复合片段 -->
+  <g stroke="#d97706" fill="none" stroke-dasharray="4,2"><rect x="52" y="262" width="190" height="50" rx="3"/></g>
+  <text x="70" y="276" font-size="8" font-weight="bold" fill="#92400e">alt</text>
+  <text x="147" y="294" text-anchor="middle" font-size="8.5" fill="#92400e">复合片段（控制流，连接件）</text>
+
+  <!-- 右侧四类 -->
+  <g stroke="#93c5fd" fill="#eff6ff"><rect x="288" y="134" width="512" height="44" rx="6"/></g>
+  <text x="302" y="152" font-size="11" font-weight="bold" fill="#1e3a5f">① 对象演化（构件）</text>
+  <text x="302" y="169" font-size="10" fill="#1e3a5f">AO 添加对象（新功能/增灵活性）　·　DO 删除对象（移除功能/降复杂度）</text>
+
+  <g stroke="#6ee7b7" fill="#ecfdf5"><rect x="288" y="184" width="512" height="76" rx="6"/></g>
+  <text x="302" y="202" font-size="11" font-weight="bold" fill="#14532d">🔴 ② 消息演化（连接件）—— 增删换序、掉头、换人</text>
+  <text x="302" y="219" font-size="10" fill="#14532d">AM 增添消息　·　DM 删除消息　·　SMO 交换两条消息的时间顺序</text>
+  <text x="302" y="236" font-size="10" font-weight="bold" fill="#065f46">OM 反转收发对象（掉头：A→B 变 B→A）</text>
+  <text x="302" y="253" font-size="10" font-weight="bold" fill="#065f46">CMM 改变发送或接收对象（换人：把一端换成别的对象）</text>
+
+  <g stroke="#fbbf24" fill="#fffbeb"><rect x="288" y="266" width="512" height="58" rx="6"/></g>
+  <text x="302" y="284" font-size="11" font-weight="bold" fill="#78350f">③ 复合片段演化（连接件，控制流描述）</text>
+  <text x="302" y="301" font-size="10" fill="#78350f">AF 新增片段　·　DF 删除片段　·　FTC 改变片段类型　·　FCC 改变内部执行条件</text>
+  <text x="302" y="317" font-size="9" fill="#92400e">FTC 改"类型"（alt/loop/opt…）　FCC 改"条件"（判断表达式）</text>
+
+  <g stroke="#c4b5fd" fill="#f5f3ff"><rect x="20" y="344" width="780" height="52" rx="6"/></g>
+  <text x="34" y="362" font-size="11" font-weight="bold" fill="#4c1d95">④ 约束演化 —— 约束缺乏可视化描述，直接修改无法映射到自动机模型</text>
+  <text x="34" y="380" font-size="10" fill="#4c1d95">AC 添加约束（需判断设计是否满足）　·　DC 删除约束（一般架构设计均会满足演化后的约束）</text>
+
+  <text x="20" y="422" font-size="10.5" fill="#6b7280">⚠️ 原始材料仅有四个类别名，全部具体演化操作（含英文缩写）为检索补充，措辞非教材原文逐字转录</text>
+  <text x="20" y="442" font-size="10.5" fill="#6b7280">✅ 10.1 节名核对：确为「软件架构演化和"定义"的关系」（非"演化和维护"），多来源标题一致，原始材料无误</text>
+  <text x="20" y="464" font-size="10.5" fill="#6b7280">易混：OM「掉个头」两端对象不变　vs　CMM「换个人」把一端换成别的对象</text>
+</svg>
