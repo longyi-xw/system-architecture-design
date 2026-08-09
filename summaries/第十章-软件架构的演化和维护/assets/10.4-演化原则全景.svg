@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="470" viewBox="0 0 820 470" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="470" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">软件架构演化 18 条原则 · 五组记忆法</text>
+  <text x="410" y="45" text-anchor="middle" font-size="10.5" fill="#9ca3af">管项目 → 保稳定 → 控影响 → 向未来 → 合外部（分组为本笔记的记忆组织方式，非教材分类）</text>
+
+  <!-- 一、管项目 -->
+  <g stroke="#fca5a5" fill="#fee2e2"><rect x="20" y="58" width="380" height="96" rx="8"/></g>
+  <text x="34" y="78" font-size="12" font-weight="bold" fill="#7f1d1d">🔴 一、管项目（项目管理经典三角）</text>
+  <g font-size="10" fill="#7f1d1d">
+    <text x="34" y="98">① <tspan font-weight="bold">演化成本控制</tspan> — 成本控制在预期范围内</text>
+    <text x="34" y="118">② <tspan font-weight="bold">进度可控</tspan> — 在预期时间内完成</text>
+    <text x="34" y="138">③ <tspan font-weight="bold">风险可控</tspan> — 经济/时间/人力/技术/环境风险可控</text>
+  </g>
+
+  <!-- 二、保稳定 -->
+  <g stroke="#93c5fd" fill="#eff6ff"><rect x="420" y="58" width="380" height="96" rx="8"/></g>
+  <text x="434" y="78" font-size="12" font-weight="bold" fill="#1e3a5f">🔴 二、保稳定（别把系统改乱了）</text>
+  <g font-size="10" fill="#1e3a5f">
+    <text x="434" y="98">④ <tspan font-weight="bold">主体维持</tspan> — 平均增量增长平稳，主体行为稳定</text>
+    <text x="434" y="116">⑤ 系统总体结构优化 — 整体布局更合理</text>
+    <text x="434" y="134">⑥ <tspan font-weight="bold">平滑演化</tspan> — 演化速率趋于稳定</text>
+    <text x="434" y="150">⑦ 目标一致 — 阶段目标与最终目标一致</text>
+  </g>
+
+  <!-- 易混提示 -->
+  <g stroke="#f59e0b" fill="#fffbeb"><rect x="20" y="164" width="780" height="38" rx="6"/></g>
+  <text x="34" y="181" font-size="10.5" font-weight="bold" fill="#78350f">⚠️ 最易考辨析：</text>
+  <text x="130" y="181" font-size="10.5" fill="#78350f"><tspan font-weight="bold">主体维持</tspan> = 系统主体行为稳定（讲<tspan font-weight="bold">结果</tspan>，改完还是那个系统）</text>
+  <text x="130" y="196" font-size="10.5" fill="#78350f"><tspan font-weight="bold">平滑演化</tspan> = 演化速率稳定（讲<tspan font-weight="bold">过程节奏</tspan>，别忽快忽慢）</text>
+
+  <!-- 三、控影响 -->
+  <g stroke="#c4b5fd" fill="#f5f3ff"><rect x="20" y="212" width="253" height="96" rx="8"/></g>
+  <text x="34" y="232" font-size="12" font-weight="bold" fill="#4c1d95">三、控影响</text>
+  <text x="34" y="248" font-size="9" fill="#6d28d9">别牵一发动全身</text>
+  <g font-size="9.5" fill="#4c1d95">
+    <text x="34" y="268">⑧ 模块独立演化 — 各模块演化相互独立</text>
+    <text x="34" y="286">⑨ 影响可控 — 变更对其他模块影响可控</text>
+    <text x="34" y="302">⑩ 复杂性可控 — 架构复杂性在可控范围</text>
+  </g>
+
+  <!-- 四、向未来 -->
+  <g stroke="#6ee7b7" fill="#ecfdf5"><rect x="283" y="212" width="253" height="96" rx="8"/></g>
+  <text x="297" y="232" font-size="12" font-weight="bold" fill="#14532d">四、向未来</text>
+  <text x="297" y="248" font-size="9" fill="#059669">改完要更好用、更好改</text>
+  <g font-size="9.5" fill="#14532d">
+    <text x="297" y="268">⑪ 有利于重构 — 演化后便于重构</text>
+    <text x="297" y="284">⑫ 有利于重用 — 维持甚至提高可重用性</text>
+    <text x="297" y="300">⑰ 质量向好　⑱ 适应新需求</text>
+  </g>
+
+  <!-- 五、合外部 -->
+  <g stroke="#fbbf24" fill="#fffbeb"><rect x="546" y="212" width="254" height="96" rx="8"/></g>
+  <text x="560" y="232" font-size="12" font-weight="bold" fill="#78350f">五、合外部</text>
+  <text x="560" y="248" font-size="9" fill="#b45309">技术·环境·标准·设计规范</text>
+  <g font-size="9.5" fill="#78350f">
+    <text x="560" y="268">⑬ <tspan font-weight="bold">设计原则遵从性</tspan> — 别跟架构设计原则打架</text>
+    <text x="560" y="284">⑭ 适应新技术 — 独立于特定技术手段</text>
+    <text x="560" y="300">⑮ 环境适应性　⑯ 标准依从性</text>
+  </g>
+
+  <line x1="20" y1="324" x2="800" y2="324" stroke="#e5e7eb"/>
+
+  <!-- 完整清单 -->
+  <text x="20" y="346" font-size="11.5" font-weight="bold" fill="#1f2937">18 条完整清单（原文顺序）</text>
+  <g font-size="9.5" fill="#475569">
+    <text x="20" y="366">1 演化成本控制　2 进度可控　3 风险可控　4 主体维持　5 系统总体结构优化　6 平滑演化</text>
+    <text x="20" y="386">7 目标一致　8 模块独立演化　9 影响可控　10 复杂性可控　11 有利于重构　12 有利于重用</text>
+    <text x="20" y="406">13 设计原则遵从性　14 适应新技术　15 环境适应性　16 标准依从性　17 质量向好　18 适应新需求</text>
+  </g>
+
+  <text x="20" y="436" font-size="10" fill="#6b7280">⚠️ 原始材料只有 18 条名称、无任何解释，各条含义为检索补充（名称与顺序与原文完全一致）</text>
+  <text x="20" y="456" font-size="10" fill="#6b7280">⚠️ 教材称"为每条原则设计了度量方法"，但具体度量方式在原始材料与检索中均未获得，此部分内容缺失</text>
+</svg>
