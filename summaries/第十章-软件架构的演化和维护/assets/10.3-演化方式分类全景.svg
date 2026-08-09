@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="440" viewBox="0 0 820 440" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="440" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">软件架构演化方式的分类</text>
+  <text x="410" y="46" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">🔴 唯一分类标准：演化时，系统在不在运行？</text>
+
+  <!-- 分叉 -->
+  <g stroke="#9ca3af" stroke-width="1.5" fill="none">
+    <line x1="410" y1="54" x2="410" y2="70"/>
+    <line x1="210" y1="70" x2="610" y2="70"/>
+    <line x1="210" y1="70" x2="210" y2="84"/>
+    <line x1="610" y1="70" x2="610" y2="84"/>
+  </g>
+
+  <!-- 静态演化 -->
+  <g stroke="#93c5fd" fill="#eff6ff"><rect x="20" y="84" width="380" height="286" rx="8"/></g>
+  <rect x="20" y="84" width="380" height="34" rx="8" fill="#1e3a5f"/>
+  <text x="210" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">静态演化 Static Evolution</text>
+  <text x="210" y="136" text-anchor="middle" font-size="10.5" fill="#1e3a5f">系统 <tspan font-weight="bold">停止运行</tspan> 期间的修改和更新</text>
+  <text x="210" y="153" text-anchor="middle" font-size="10" font-style="italic" fill="#64748b">= 一般意义上的软件修复和升级</text>
+
+  <text x="40" y="178" font-size="11" font-weight="bold" fill="#1e3a5f">🔴 五个步骤</text>
+  <g font-size="10">
+    <g stroke="#3b82f6" fill="#ffffff">
+      <rect x="40" y="188" width="340" height="28" rx="4"/>
+      <rect x="40" y="222" width="340" height="28" rx="4"/>
+      <rect x="40" y="256" width="340" height="28" rx="4"/>
+      <rect x="40" y="290" width="340" height="28" rx="4"/>
+      <rect x="40" y="324" width="340" height="28" rx="4"/>
+    </g>
+    <g fill="#1e3a5f">
+      <text x="52" y="206"><tspan font-weight="bold">① 软件理解</tspan> — 查文档析架构，提取抽象表示</text>
+      <text x="52" y="240"><tspan font-weight="bold">② 需求变更分析</tspan> — 找出新旧需求的差异</text>
+      <text x="52" y="274"><tspan font-weight="bold">③ 演化计划</tspan> — 确定演化范围和成本</text>
+      <text x="52" y="308"><tspan font-weight="bold">④ 系统重构</tspan> — 按计划重构以适应当前需求</text>
+      <text x="52" y="342"><tspan font-weight="bold">⑤ 系统测试</tspan> — 查找错误和不足</text>
+    </g>
+  </g>
+
+  <!-- 动态演化 -->
+  <g stroke="#fca5a5" fill="#fee2e2"><rect x="420" y="84" width="380" height="286" rx="8"/></g>
+  <rect x="420" y="84" width="380" height="34" rx="8" fill="#7f1d1d"/>
+  <text x="610" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">动态演化 Dynamic Evolution</text>
+  <text x="610" y="136" text-anchor="middle" font-size="10.5" fill="#7f1d1d">系统 <tspan font-weight="bold">运行期间</tspan> 进行的演化</text>
+  <text x="610" y="153" text-anchor="middle" font-size="10" font-style="italic" fill="#991b1b">不停机改系统 → 比静态演化更困难</text>
+
+  <text x="440" y="178" font-size="11" font-weight="bold" fill="#7f1d1d">两类需求来源</text>
+  <g font-size="9.5" fill="#7f1d1d">
+    <text x="440" y="195">① 软件内部执行所导致的体系结构改变</text>
+    <text x="440" y="211">② 软件系统外部的请求对软件进行的重配置</text>
+  </g>
+
+  <text x="440" y="234" font-size="11" font-weight="bold" fill="#7f1d1d">四个方面</text>
+  <g font-size="9.5" text-anchor="middle">
+    <g stroke="#dc2626" fill="#ffffff">
+      <rect x="440" y="242" width="82" height="24" rx="4"/>
+      <rect x="530" y="242" width="82" height="24" rx="4"/>
+      <rect x="620" y="242" width="82" height="24" rx="4"/>
+      <rect x="710" y="242" width="72" height="24" rx="4"/>
+    </g>
+    <g fill="#7f1d1d">
+      <text x="481" y="258">属性改名</text>
+      <text x="571" y="258">行为变化</text>
+      <text x="661" y="258">拓扑结构改变</text>
+      <text x="746" y="258">风格变化</text>
+    </g>
+  </g>
+  <text x="440" y="282" font-size="9" fill="#991b1b">⚠️ 原文仅给四个名称未展开含义，未勉强填充</text>
+
+  <text x="440" y="306" font-size="11" font-weight="bold" fill="#7f1d1d">🔴 两种实现技术</text>
+  <g stroke="#dc2626" fill="#ffffff">
+    <rect x="440" y="314" width="170" height="44" rx="4"/>
+    <rect x="620" y="314" width="162" height="44" rx="4"/>
+  </g>
+  <g font-size="9.5" fill="#7f1d1d" text-anchor="middle">
+    <text x="525" y="330" font-weight="bold">DSA 动态软件架构</text>
+    <text x="525" y="347" font-size="8.5">运行中对框架结构动态演化、改架构</text>
+    <text x="701" y="330" font-weight="bold">DR 动态重配置</text>
+    <text x="701" y="347" font-size="8.5">运行中增删组件、改连接关系</text>
+  </g>
+
+  <text x="20" y="392" font-size="11" font-weight="bold" fill="#4c1d95">记忆钩子</text>
+  <text x="20" y="412" font-size="10.5" fill="#4c1d95">静态五步 = 一个小型软件工程流程：看懂旧的 → 搞清改什么 → 规划 → 动手 → 验证</text>
+  <text x="20" y="430" font-size="10.5" fill="#4c1d95">动态两技术：DSA 动的是「框架结构本身」，DR 动的是「组件增删与连接关系」</text>
+</svg>
