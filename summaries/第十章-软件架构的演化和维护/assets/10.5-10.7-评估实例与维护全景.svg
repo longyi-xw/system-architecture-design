@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="560" viewBox="0 0 820 560" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="560" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">演化评估（10.5）· 大型网站演化十阶段（10.6）· 架构维护（10.7）</text>
+
+  <!-- 10.5 -->
+  <text x="20" y="52" font-size="12" font-weight="bold" fill="#4c1d95">10.5 演化评估 —— 只看「演化过程知不知道」</text>
+  <g stroke="#c4b5fd" fill="#f5f3ff">
+    <rect x="20" y="60" width="385" height="52" rx="6"/>
+    <rect x="415" y="60" width="385" height="52" rx="6"/>
+  </g>
+  <text x="34" y="79" font-size="10.5" font-weight="bold" fill="#4c1d95">演化过程已知 → 正向度量</text>
+  <text x="34" y="96" font-size="9.5" fill="#4c1d95">度量演化前后，比较内部结构差异 + 外部质量属性变化</text>
+  <text x="34" y="108" font-size="9" fill="#6d28d9">流程：中间版本度量 → 质量属性距离 → 演化评估</text>
+  <text x="429" y="79" font-size="10.5" font-weight="bold" fill="#4c1d95">演化过程未知 → 逆向推测</text>
+  <text x="429" y="96" font-size="9.5" fill="#4c1d95">据演化前后度量结果逆向推测架构发生了哪些改变，</text>
+  <text x="429" y="108" font-size="9.5" fill="#4c1d95">并分析其与质量属性的关联关系</text>
+
+  <line x1="20" y1="124" x2="800" y2="124" stroke="#e5e7eb"/>
+
+  <!-- 10.6 十阶段 -->
+  <text x="20" y="146" font-size="12" font-weight="bold" fill="#14532d">10.6 大型网站架构演化十阶段 —— 内在逻辑：<tspan fill="#dc2626">哪里成为瓶颈就拆哪里</tspan></text>
+
+  <g font-size="9" text-anchor="middle">
+    <g stroke="#6ee7b7" fill="#ecfdf5">
+      <rect x="20" y="156" width="150" height="42" rx="5"/>
+      <rect x="178" y="156" width="150" height="42" rx="5"/>
+      <rect x="336" y="156" width="150" height="42" rx="5"/>
+      <rect x="494" y="156" width="150" height="42" rx="5"/>
+      <rect x="652" y="156" width="148" height="42" rx="5"/>
+    </g>
+    <g fill="#14532d">
+      <text x="95" y="172" font-weight="bold" font-size="10">① 单体架构</text>
+      <text x="95" y="188">只有一台服务器</text>
+      <text x="253" y="172" font-weight="bold" font-size="10">② 垂直架构</text>
+      <text x="253" y="186">应用/数据库/文件</text>
+      <text x="253" y="196">三台服务器</text>
+      <text x="411" y="172" font-weight="bold" font-size="10">③ 使用缓存</text>
+      <text x="411" y="188">本地缓存+缓存服务器</text>
+      <text x="569" y="172" font-weight="bold" font-size="10">④ 服务集群</text>
+      <text x="569" y="188">负载均衡调度服务器</text>
+      <text x="726" y="172" font-weight="bold" font-size="10">⑤ 读写分离</text>
+      <text x="726" y="188">数据库主从关系</text>
+    </g>
+
+    <g stroke="#6ee7b7" fill="#ecfdf5">
+      <rect x="20" y="206" width="150" height="42" rx="5"/>
+      <rect x="178" y="206" width="150" height="42" rx="5"/>
+      <rect x="336" y="206" width="150" height="42" rx="5"/>
+      <rect x="494" y="206" width="150" height="42" rx="5"/>
+      <rect x="652" y="206" width="148" height="42" rx="5"/>
+    </g>
+    <g fill="#14532d">
+      <text x="95" y="222" font-weight="bold" font-size="10">⑥ CDN+反向代理</text>
+      <text x="95" y="238">加速网站响应</text>
+      <text x="253" y="222" font-weight="bold" font-size="10">⑦ 分布式</text>
+      <text x="253" y="236">分布式文件系统</text>
+      <text x="253" y="246">+分布式数据库</text>
+      <text x="411" y="222" font-weight="bold" font-size="10">⑧ NoSQL+搜索引擎</text>
+      <text x="411" y="236">统一数据访问模块</text>
+      <text x="569" y="222" font-weight="bold" font-size="10">⑨ 业务拆分</text>
+      <text x="569" y="238">分而治之，分产品线</text>
+      <text x="726" y="222" font-weight="bold" font-size="10">⑩ 分布式服务</text>
+      <text x="726" y="238">调用共用业务服务</text>
+    </g>
+  </g>
+
+  <!-- CDN vs 反向代理 -->
+  <text x="20" y="272" font-size="11.5" font-weight="bold" fill="#7f1d1d">🔴 CDN vs 反向代理（原文明确对比，最可能考）</text>
+  <g stroke="#fca5a5" fill="#fee2e2">
+    <rect x="20" y="282" width="385" height="76" rx="6"/>
+    <rect x="415" y="282" width="385" height="76" rx="6"/>
+  </g>
+  <text x="212" y="302" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#7f1d1d">CDN</text>
+  <text x="607" y="302" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#7f1d1d">反向代理</text>
+  <text x="212" y="322" text-anchor="middle" font-size="10" fill="#991b1b">部署在<tspan font-weight="bold">网络提供商的机房</tspan></text>
+  <text x="607" y="322" text-anchor="middle" font-size="10" fill="#991b1b">部署在<tspan font-weight="bold">网站的中心机房</tspan></text>
+  <text x="212" y="340" text-anchor="middle" font-size="9.5" fill="#991b1b">用户从距离自己<tspan font-weight="bold">最近</tspan>的机房获取数据</text>
+  <text x="607" y="340" text-anchor="middle" font-size="9.5" fill="#991b1b">请求到中心机房后<tspan font-weight="bold">首先访问</tspan>的服务器，</text>
+  <text x="607" y="353" text-anchor="middle" font-size="9.5" fill="#991b1b">有缓存则直接返回</text>
+  <text x="212" y="353" text-anchor="middle" font-size="9" font-style="italic" fill="#dc2626">在「离用户近」的地方</text>
+
+  <text x="20" y="378" font-size="10" font-style="italic" fill="#dc2626">记忆：CDN 把内容推到边缘（离用户近）　｜　反向代理在入口处挡一道缓存（离网站近）</text>
+
+  <line x1="20" y1="392" x2="800" y2="392" stroke="#e5e7eb"/>
+
+  <!-- 10.7 -->
+  <text x="20" y="414" font-size="12" font-weight="bold" fill="#1e3a5f">10.7 软件架构维护</text>
+  <g stroke="#93c5fd" fill="#eff6ff">
+    <rect x="20" y="424" width="253" height="82" rx="6"/>
+    <rect x="283" y="424" width="253" height="82" rx="6"/>
+    <rect x="546" y="424" width="254" height="82" rx="6"/>
+  </g>
+  <text x="146" y="444" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e3a5f">架构知识管理</text>
+  <text x="409" y="444" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e3a5f">架构修改管理</text>
+  <text x="673" y="444" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e3a5f">架构版本管理 ⚠️</text>
+  <g font-size="9.5" fill="#1e3a5f">
+    <text x="34" y="464">对架构设计中隐含的<tspan font-weight="bold">决策来源</tspan></text>
+    <text x="34" y="478">进行<tspan font-weight="bold">文档化表示</tspan>，帮助维护人员</text>
+    <text x="34" y="492">完善考虑修改、为其他活动提供参考</text>
+    <text x="297" y="464">建立一个<tspan font-weight="bold">隔离区域</tspan>，保障该区域</text>
+    <text x="297" y="478">中任何修改对其他部分影响较小</text>
+    <text x="297" y="492">→ 明确修改规则、类型、影响范围</text>
+    <text x="560" y="464">为版本控制、使用和评价提供</text>
+    <text x="560" y="478">可靠依据，为架构演化的</text>
+    <text x="560" y="492"><tspan font-weight="bold">量化度量</tspan>奠定基础</text>
+  </g>
+
+  <text x="20" y="526" font-size="10" fill="#6b7280">⚠️ 原始材料 10.7 只有前两项，"架构版本管理""架构可维护性度量实践"为检索补充（单一来源），教材是否收录待核对</text>
+  <text x="20" y="546" font-size="10" fill="#6b7280">⚠️ 10.5 原始材料仅一张图片无文字，全节为检索补充；架构知识 = 架构设计 + 设计决策（记住"当初为什么这么设计"）</text>
+</svg>
