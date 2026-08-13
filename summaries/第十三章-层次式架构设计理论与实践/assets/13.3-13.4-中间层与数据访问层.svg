@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="560" viewBox="0 0 820 560" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="g1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0d9488"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="820" height="560" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">中间层架构设计（13.3）· 数据访问层设计（13.4）</text>
+
+  <!-- 左：中间层 -->
+  <rect x="20" y="40" width="390" height="500" rx="8" fill="#f0fdfa" stroke="#5eead4"/>
+  <rect x="20" y="40" width="390" height="28" rx="8" fill="#134e4a"/>
+  <text x="215" y="59" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#ffffff">13.3 中间层（业务逻辑层）四块</text>
+
+  <g>
+    <rect x="34" y="78" width="362" height="72" rx="5" fill="#ffffff" stroke="#14b8a6"/>
+    <text x="46" y="95" font-size="10.5" font-weight="bold" fill="#dc2626">🔴 13.3.1 组件设计＝接口 + 实现类</text>
+    <text x="46" y="112" font-size="9" fill="#374151">接口：定义必须实现的方法，是系统运行核心；<tspan font-weight="bold">每模块一个组件</tspan></text>
+    <text x="46" y="127" font-size="9" fill="#374151">实现类：以<tspan font-weight="bold">多个 DAO 组件</tspan>为基础，需提供 setter</text>
+    <text x="46" y="142" font-size="9" fill="#374151">配置：Spring <tspan font-weight="bold">IoC/DI</tspan> 完成，applicationContext.xml 配 FacadeManager</text>
+  </g>
+
+  <g>
+    <rect x="34" y="158" width="362" height="122" rx="5" fill="#ffffff" stroke="#14b8a6"/>
+    <text x="46" y="175" font-size="10.5" font-weight="bold" fill="#dc2626">🔴 13.3.2 工作流五大标准接口</text>
+    <text x="46" y="190" font-size="9" fill="#6b7280">工作流＝业务流程的全部或部分自动化，文档/信息/任务按过程规则流转</text>
+    <g font-size="9" fill="#374151">
+      <text x="46" y="207">① 过程定义<tspan font-weight="bold">导入/导出</tspan>（WPDL / XPDL）——「进出」</text>
+      <text x="46" y="223">② <tspan font-weight="bold">客户端应用程序接口</tspan>：任务表处理器 ↔ 工作流机——「找人」</text>
+      <text x="46" y="239">③ <tspan font-weight="bold">应用程序调用接口</tspan>：直接激活应用工具——「调工具」</text>
+      <text x="46" y="255">④ <tspan font-weight="bold">工作流机协作接口</tspan>：不同系统间无缝任务传递——「跨系统」</text>
+      <text x="46" y="271">⑤ <tspan font-weight="bold">管理和监视接口</tspan>：用户/角色/资源/过程管理——「管监控」</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="34" y="288" width="362" height="80" rx="5" fill="#ffffff" stroke="#14b8a6"/>
+    <text x="46" y="305" font-size="10.5" font-weight="bold" fill="#a16207">🟡 13.3.3 实体设计 · 三种表示方法</text>
+    <text x="46" y="322" font-size="9" fill="#374151"><tspan font-weight="bold">XML</tspan> — 标准支持、灵活、<tspan font-weight="bold">跨平台互操作性好</tspan></text>
+    <text x="46" y="338" font-size="9" fill="#374151"><tspan font-weight="bold">通用 DataSet</tspan> — 灵活含多数据关系、序列化、绑定、排序过滤、可扩展</text>
+    <text x="46" y="354" font-size="9" fill="#374151"><tspan font-weight="bold">有类型 DataSet</tspan> — 代码易读、IntelliSense、<tspan font-weight="bold">编译时类型检查</tspan></text>
+  </g>
+
+  <g>
+    <rect x="34" y="376" width="362" height="152" rx="5" fill="#ffffff" stroke="#14b8a6"/>
+    <text x="46" y="393" font-size="10.5" font-weight="bold" fill="#dc2626">🔴 13.3.4 业务容器：Domain Model — Service — Control</text>
+    <g font-size="9.5">
+      <rect x="46" y="404" width="104" height="40" rx="4" fill="#ccfbf1" stroke="#0d9488"/>
+      <text x="98" y="420" text-anchor="middle" font-weight="bold" fill="#134e4a">Domain Model</text>
+      <text x="98" y="435" text-anchor="middle" fill="#374151">状态（业务属性）</text>
+      <rect x="176" y="404" width="104" height="40" rx="4" fill="#ccfbf1" stroke="#0d9488"/>
+      <text x="228" y="420" text-anchor="middle" font-weight="bold" fill="#134e4a">Service</text>
+      <text x="228" y="435" text-anchor="middle" fill="#374151">动作（业务过程）</text>
+      <rect x="306" y="404" width="76" height="40" rx="4" fill="#ccfbf1" stroke="#0d9488"/>
+      <text x="344" y="420" text-anchor="middle" font-weight="bold" fill="#134e4a">Control</text>
+      <text x="344" y="435" text-anchor="middle" fill="#374151">指挥（纽带）</text>
+    </g>
+    <g stroke="#0d9488" stroke-width="1.2" fill="none" marker-end="url(#g1)">
+      <line x1="150" y1="424" x2="172" y2="424"/>
+      <line x1="306" y1="424" x2="284" y2="424"/>
+    </g>
+    <text x="46" y="464" font-size="9" fill="#374151">· Service 的运行<tspan font-weight="bold">依赖 Domain Model 的状态</tspan>，并按业务规则改变其状态</text>
+    <text x="46" y="480" font-size="9" fill="#374151">· Control 根据 Domain Model 的状态与参数，决定 <tspan font-weight="bold">Service 的执行顺序</tspan></text>
+    <text x="46" y="500" font-size="9" fill="#6b7280">工作流优点：应用逻辑与过程逻辑分离 ｜ 不改功能、改过程模型即可变功能</text>
+    <text x="46" y="516" font-size="9" fill="#6b7280">｜ 实现过程或全过程的集成管理</text>
+  </g>
+
+  <!-- 右：数据访问层 -->
+  <rect x="420" y="40" width="380" height="500" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+  <rect x="420" y="40" width="380" height="28" rx="8" fill="#7c2d12"/>
+  <text x="610" y="59" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#ffffff">13.4 数据访问层（持久层）</text>
+  <text x="610" y="80" text-anchor="middle" font-size="9" fill="#9a3412">与各种数据源打交道并整合，为业务逻辑层提供统一的数据服务</text>
+
+  <text x="434" y="100" font-size="10.5" font-weight="bold" fill="#dc2626">🔴 五种数据访问模式</text>
+  <g font-size="9">
+    <g fill="#ffffff" stroke="#f97316">
+      <rect x="434" y="108" width="352" height="38" rx="4"/>
+      <rect x="434" y="150" width="352" height="38" rx="4"/>
+      <rect x="434" y="192" width="352" height="38" rx="4"/>
+      <rect x="434" y="234" width="352" height="38" rx="4"/>
+      <rect x="434" y="276" width="352" height="38" rx="4"/>
+    </g>
+    <text x="446" y="124" font-size="10" font-weight="bold" fill="#9a3412">① 在线访问 Online Access</text>
+    <text x="446" y="139" fill="#374151">最基础：<tspan font-weight="bold">全程占用一个连接</tspan>不断交互；实际最常用</text>
+    <text x="446" y="166" font-size="10" font-weight="bold" fill="#9a3412">② DAO 数据访问对象（J2EE 模式）</text>
+    <text x="446" y="181" fill="#374151">底层数据访问与高层业务逻辑分开；工厂类/接口/实现类/DTO</text>
+    <text x="446" y="208" font-size="10" font-weight="bold" fill="#9a3412">③ DTO 数据传输对象（EJB 模式）</text>
+    <text x="446" y="223" fill="#374151"><tspan font-weight="bold">数据的容器</tspan>，跨进程或网络边界传输；不含业务逻辑</text>
+    <text x="446" y="250" font-size="10" font-weight="bold" fill="#9a3412">④ 离线数据模式</text>
+    <text x="446" y="265" fill="#374151">以数据为中心，按预定义结构存放；<tspan font-weight="bold">独立于连接与事务</tspan>，可与 XML 集成</text>
+    <text x="446" y="292" font-size="10" font-weight="bold" fill="#9a3412">⑤ 对象/关系映射 ORM</text>
+    <text x="446" y="307" fill="#374151">表映射为类，面向对象操作数据库；代表框架 <tspan font-weight="bold">Hibernate</tspan></text>
+  </g>
+  <text x="434" y="330" font-size="9" font-style="italic" fill="#c2410c">辨析：DAO＝谁来访问 ｜ DTO＝怎么运输 ｜ ORM＝怎么操作（ORM 是实现 DAO 的手段）</text>
+
+  <rect x="434" y="340" width="352" height="30" rx="4" fill="#fffbeb" stroke="#f59e0b"/>
+  <text x="446" y="359" font-size="9.5" fill="#92400e">🟡 <tspan font-weight="bold">工厂模式</tspan>：先定义数据库操纵接口，由类工厂按数据库决定实例化哪个类</text>
+
+  <rect x="434" y="380" width="352" height="82" rx="4" fill="#fef2f2" stroke="#ef4444"/>
+  <text x="446" y="398" font-size="10.5" font-weight="bold" fill="#991b1b">🔴 事务处理设计 · ACID 原则</text>
+  <g font-size="9" fill="#374151">
+    <text x="446" y="415"><tspan font-weight="bold" fill="#991b1b">原子性 Atomicity</tspan> — 不可分割，要么全做要么全不做</text>
+    <text x="446" y="430"><tspan font-weight="bold" fill="#991b1b">一致性 Consistency</tspan> — 事务前后数据库都处于一致状态</text>
+    <text x="446" y="445"><tspan font-weight="bold" fill="#991b1b">隔离性 Isolation</tspan> — 并发事务互不干扰</text>
+    <text x="446" y="458"><tspan font-weight="bold" fill="#991b1b">持久性 Durability</tspan> — 一旦提交，改变永久保存</text>
+  </g>
+
+  <rect x="434" y="472" width="352" height="56" rx="4" fill="#ffffff" stroke="#f97316"/>
+  <text x="446" y="490" font-size="10.5" font-weight="bold" fill="#dc2626">🔴 连接对象管理设计 · 连接池</text>
+  <text x="446" y="506" font-size="9" fill="#374151">连接是重要共享资源，频繁分配释放有性能问题 →</text>
+  <text x="446" y="521" font-size="9" fill="#374151"><tspan font-weight="bold">初始化时按配置建好放入池中，此后均从池内获取，实现高效复用</tspan></text>
+</svg>
