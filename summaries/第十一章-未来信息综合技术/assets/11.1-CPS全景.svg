@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="490" viewBox="0 0 820 490" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7280"/>
+    </marker>
+    <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="820" height="490" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">信息物理系统 CPS 全景</text>
+  <text x="410" y="45" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">🔴 本质：信息空间 ⇄ 物理空间，基于数据自动流动的闭环赋能体系</text>
+
+  <!-- 闭环四动作 -->
+  <g font-size="12" font-weight="bold">
+    <g fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5">
+      <rect x="30" y="60" width="170" height="34" rx="6"/>
+      <rect x="225" y="60" width="170" height="34" rx="6"/>
+      <rect x="420" y="60" width="170" height="34" rx="6"/>
+      <rect x="615" y="60" width="170" height="34" rx="6"/>
+    </g>
+    <text x="115" y="82" text-anchor="middle" fill="#92400e">状态感知</text>
+    <text x="310" y="82" text-anchor="middle" fill="#92400e">实时分析</text>
+    <text x="505" y="82" text-anchor="middle" fill="#92400e">科学决策</text>
+    <text x="700" y="82" text-anchor="middle" fill="#92400e">精准执行</text>
+  </g>
+  <g stroke="#f59e0b" stroke-width="1.5" fill="none" marker-end="url(#arw)">
+    <line x1="200" y1="77" x2="222" y2="77"/>
+    <line x1="395" y1="77" x2="417" y2="77"/>
+    <line x1="590" y1="77" x2="612" y2="77"/>
+    <path d="M 785 77 H 797 V 110 H 18 V 77 H 26"/>
+  </g>
+  <text x="410" y="123" text-anchor="middle" font-size="10" fill="#92400e">闭环 · 解决生产制造与应用服务中的「复杂性 + 不确定性」</text>
+
+  <!-- 左：体系架构三级 -->
+  <rect x="20" y="136" width="380" height="256" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+  <rect x="20" y="136" width="380" height="30" rx="8" fill="#1e3a5f"/>
+  <text x="210" y="156" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#ffffff">🔴 体系架构三级（自下而上）</text>
+
+  <g>
+    <rect x="38" y="304" width="344" height="72" rx="6" fill="#ffffff" stroke="#3b82f6"/>
+    <text x="52" y="323" font-size="12" font-weight="bold" fill="#1e3a5f">单元级 · CPS 最小单元</text>
+    <text x="52" y="341" font-size="10" fill="#374151">可感知 · 可计算 · 可交互 · 可延展 · 自决策（须有通信功能）</text>
+    <text x="52" y="358" font-size="10" fill="#64748b">例：智能部件、工业机器人、智能机床</text>
+    <text x="52" y="371" font-size="9.5" font-style="italic" fill="#2563eb">重点：感知与控制</text>
+  </g>
+  <g>
+    <rect x="38" y="224" width="344" height="72" rx="6" fill="#ffffff" stroke="#3b82f6"/>
+    <text x="52" y="243" font-size="12" font-weight="bold" fill="#1e3a5f">系统级 · 多单元经工业网络组合</text>
+    <text x="52" y="261" font-size="10" fill="#374151">互连互通 · 即插即用 · 数据互操作 · 协同控制 · 监视诊断</text>
+    <text x="52" y="278" font-size="10" fill="#64748b">自组织 / 自配置 / 自决策 / 自优化（例：智能产线、车间）</text>
+    <text x="52" y="291" font-size="9.5" font-style="italic" fill="#2563eb">重点：互联与协同</text>
+  </g>
+  <g>
+    <rect x="38" y="176" width="344" height="40" rx="6" fill="#ffffff" stroke="#3b82f6"/>
+    <text x="52" y="194" font-size="12" font-weight="bold" fill="#1e3a5f">SoS 级 · 多系统级的有机组合</text>
+    <text x="52" y="210" font-size="10" fill="#374151">数据汇聚 · 资产优化（对内）· 运营优化服务（对外）<tspan font-style="italic" fill="#2563eb"> ← 重点：数据与服务</tspan></text>
+  </g>
+  <g stroke="#3b82f6" stroke-width="1.5" fill="none" marker-end="url(#ar)">
+    <line x1="210" y1="304" x2="210" y2="300"/>
+    <line x1="210" y1="224" x2="210" y2="220"/>
+  </g>
+
+  <!-- 右：四大核心技术要素 -->
+  <rect x="420" y="136" width="380" height="256" rx="8" fill="#f0fdf4" stroke="#86efac"/>
+  <rect x="420" y="136" width="380" height="30" rx="8" fill="#14532d"/>
+  <text x="610" y="156" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#ffffff">🔴 四大核心技术要素：一硬一软一网一平台</text>
+
+  <g>
+    <rect x="438" y="176" width="344" height="48" rx="6" fill="#ffffff" stroke="#22c55e"/>
+    <text x="452" y="195" font-size="11.5" font-weight="bold" fill="#14532d">「一硬」感知和自动控制</text>
+    <text x="452" y="213" font-size="10" fill="#374151">CPS 实现的<tspan font-weight="bold">硬件支撑</tspan>（传感器 + 虚实融合控制）</text>
+  </g>
+  <g>
+    <rect x="438" y="230" width="344" height="48" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="452" y="249" font-size="11.5" font-weight="bold" fill="#991b1b">「一软」工业软件 ★ 核心</text>
+    <text x="452" y="267" font-size="10" fill="#374151">固化 CPS <tspan font-weight="bold">计算和数据流程的规则</tspan>，是 CPS 的核心</text>
+  </g>
+  <g>
+    <rect x="438" y="284" width="344" height="48" rx="6" fill="#ffffff" stroke="#22c55e"/>
+    <text x="452" y="303" font-size="11.5" font-weight="bold" fill="#14532d">「一网」工业网络</text>
+    <text x="452" y="321" font-size="10" fill="#374151"><tspan font-weight="bold">互联互通与数据传输</tspan>的网络载体</text>
+  </g>
+  <g>
+    <rect x="438" y="338" width="344" height="48" rx="6" fill="#ffffff" stroke="#22c55e"/>
+    <text x="452" y="357" font-size="11.5" font-weight="bold" fill="#14532d">「一平台」工业云和智能服务平台</text>
+    <text x="452" y="375" font-size="10" fill="#374151"><tspan font-weight="bold">数据汇聚</tspan>、支撑上层解决方案，提供资源管控与能力服务</text>
+  </g>
+
+  <!-- 底：建设路径 -->
+  <rect x="20" y="404" width="780" height="66" rx="8" fill="#faf5ff" stroke="#d8b4fe"/>
+  <text x="36" y="424" font-size="11.5" font-weight="bold" fill="#6b21a8">🟡 建设路径（= 先做顶层设计，再由下往上建三级）</text>
+  <g font-size="10.5">
+    <g fill="#ffffff" stroke="#a855f7">
+      <rect x="36" y="432" width="176" height="28" rx="4"/>
+      <rect x="228" y="432" width="176" height="28" rx="4"/>
+      <rect x="420" y="432" width="176" height="28" rx="4"/>
+      <rect x="612" y="432" width="172" height="28" rx="4"/>
+    </g>
+    <text x="124" y="450" text-anchor="middle" fill="#6b21a8">① CPS 体系设计</text>
+    <text x="316" y="450" text-anchor="middle" fill="#6b21a8">② 单元级 CPS 建设</text>
+    <text x="508" y="450" text-anchor="middle" fill="#6b21a8">③ 系统级 CPS 建设</text>
+    <text x="698" y="450" text-anchor="middle" fill="#6b21a8">④ SoS 级 CPS 建设</text>
+  </g>
+  <g stroke="#a855f7" stroke-width="1.3" fill="none" marker-end="url(#ar)">
+    <line x1="212" y1="446" x2="225" y2="446"/>
+    <line x1="404" y1="446" x2="417" y2="446"/>
+    <line x1="596" y1="446" x2="609" y2="446"/>
+  </g>
+</svg>
