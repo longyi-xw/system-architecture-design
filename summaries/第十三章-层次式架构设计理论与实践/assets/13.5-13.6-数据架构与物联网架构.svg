@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="450" viewBox="0 0 820 450" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="h1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0284c7"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="820" height="450" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">数据架构规划与设计（13.5）· 物联网层次架构设计（13.6）</text>
+
+  <!-- 左：13.5 -->
+  <rect x="20" y="42" width="430" height="390" rx="8" fill="#f5f3ff" stroke="#c4b5fd"/>
+  <rect x="20" y="42" width="430" height="28" rx="8" fill="#4c1d95"/>
+  <text x="235" y="61" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#ffffff">13.5 数据架构规划与设计（两条融合线）</text>
+
+  <rect x="34" y="80" width="402" height="66" rx="5" fill="#ffffff" stroke="#8b5cf6"/>
+  <text x="46" y="98" font-size="10.5" font-weight="bold" fill="#a16207">🟡 ① 数据库设计与「类的设计」融合</text>
+  <text x="46" y="115" font-size="9.5" fill="#374151"><tspan font-weight="bold">对类和类之间关系的正确识别，是数据模型的关键所在</tspan></text>
+  <text x="46" y="130" font-size="9.5" fill="#374151">建模是一项艺术，无唯一解；好模型＝最小化<tspan font-weight="bold">整个生命周期成本</tspan>＋适应变化</text>
+  <text x="46" y="142" font-size="9" font-style="italic" fill="#6b7280">⚠️ 不应过度关注短期开发成本</text>
+
+  <text x="34" y="168" font-size="10.5" font-weight="bold" fill="#dc2626">🔴 ② 数据库设计与「XML 设计」融合</text>
+  <rect x="34" y="176" width="402" height="26" rx="4" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="235" y="194" text-anchor="middle" font-size="10" font-weight="bold" fill="#4c1d95">XML 数据库＝一组 XML 文档的集合，且是持久的、可操作的</text>
+
+  <text x="34" y="220" font-size="10" font-weight="bold" fill="#4c1d95">XML 文档两分类</text>
+  <g font-size="9">
+    <rect x="34" y="228" width="198" height="60" rx="4" fill="#ffffff" stroke="#8b5cf6"/>
+    <text x="46" y="245" font-size="10" font-weight="bold" fill="#4c1d95">数据中心型</text>
+    <text x="46" y="260" fill="#374151">结构规则 · 内容同构</text>
+    <text x="46" y="273" fill="#374151">混合内容与嵌套少</text>
+    <text x="46" y="284" fill="#6b7280">用于存储和传输 Web 数据</text>
+    <rect x="238" y="228" width="198" height="60" rx="4" fill="#ffffff" stroke="#8b5cf6"/>
+    <text x="250" y="245" font-size="10" font-weight="bold" fill="#4c1d95">文档中心型</text>
+    <text x="250" y="260" fill="#374151">结构不规则 · 内容零散</text>
+    <text x="250" y="273" font-weight="bold" fill="#991b1b">元素之间的顺序是有关的</text>
+    <text x="250" y="284" fill="#6b7280">用于发布描述性信息、产品介绍</text>
+  </g>
+  <text x="235" y="302" text-anchor="middle" font-size="9" font-style="italic" fill="#6d28d9">规整的「数据」 vs 松散的「文章」（后者调换顺序意思就变）</text>
+
+  <text x="34" y="322" font-size="10" font-weight="bold" fill="#4c1d95">XML 文档两种存储方式</text>
+  <g font-size="9">
+    <rect x="34" y="330" width="198" height="72" rx="4" fill="#fef2f2" stroke="#ef4444"/>
+    <text x="46" y="347" font-size="10" font-weight="bold" fill="#991b1b">文件存储 — 三个「不行」</text>
+    <text x="46" y="363" fill="#374151">✗ 无法获取结构化数据</text>
+    <text x="46" y="378" fill="#374151">✗ 依赖附加索引，关键字不定难定位</text>
+    <text x="46" y="393" fill="#374151">✗ 只能返回原始文档形式</text>
+    <rect x="238" y="330" width="198" height="72" rx="4" fill="#f0fdf4" stroke="#22c55e"/>
+    <text x="250" y="347" font-size="10" font-weight="bold" fill="#14532d">数据库存储 — 三个「好」</text>
+    <text x="250" y="363" fill="#374151">✓ 管理便捷、占空间小、检索快</text>
+    <text x="250" y="378" fill="#374151">✓ 能处理结构化与半结构化数据</text>
+    <text x="250" y="393" fill="#374151">✓ 支持多用户并发控制与一致性约束</text>
+  </g>
+  <text x="235" y="420" text-anchor="middle" font-size="9" fill="#6b7280">🟢 通用资料（非教材）：XML 数据库三类型 XED / NXD / HXD</text>
+
+  <!-- 右：13.6 -->
+  <rect x="462" y="42" width="338" height="390" rx="8" fill="#f0f9ff" stroke="#7dd3fc"/>
+  <rect x="462" y="42" width="338" height="28" rx="8" fill="#075985"/>
+  <text x="631" y="61" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#ffffff">🔴 13.6 物联网三层架构：采 → 传 → 用</text>
+
+  <g>
+    <rect x="478" y="86" width="306" height="86" rx="6" fill="#ffffff" stroke="#0ea5e9"/>
+    <text x="492" y="106" font-size="12" font-weight="bold" fill="#075985">应用层 · 「用」</text>
+    <text x="492" y="126" font-size="10" font-weight="bold" fill="#991b1b">解决的是信息处理和人机交互的问题</text>
+    <text x="492" y="145" font-size="9" fill="#6b7280">数据处理平台 · 应用服务器 · 用户界面</text>
+    <text x="492" y="162" font-size="9" font-style="italic" fill="#0369a1">比网络层多的是「人机交互」</text>
+  </g>
+  <g>
+    <rect x="478" y="188" width="306" height="86" rx="6" fill="#ffffff" stroke="#0ea5e9"/>
+    <text x="492" y="208" font-size="12" font-weight="bold" fill="#075985">网络层 · 「传」</text>
+    <text x="492" y="228" font-size="10" font-weight="bold" fill="#991b1b">用于传递信息和处理信息</text>
+    <text x="492" y="247" font-size="9" fill="#6b7280">有线（以太网）· 无线（Wi-Fi/蓝牙/ZigBee/LoRa）</text>
+    <text x="492" y="262" font-size="9" fill="#6b7280">卫星通信 · 网关 · 路由器</text>
+  </g>
+  <g>
+    <rect x="478" y="290" width="306" height="86" rx="6" fill="#ffffff" stroke="#0ea5e9"/>
+    <text x="492" y="310" font-size="12" font-weight="bold" fill="#075985">感知层 · 「采」</text>
+    <text x="492" y="330" font-size="10" font-weight="bold" fill="#991b1b">用于识别物体、采集信息</text>
+    <text x="492" y="349" font-size="9" fill="#6b7280">传感器与传感器网关 · RFID 标签与读写器</text>
+    <text x="492" y="364" font-size="9" fill="#6b7280">二维码标签 · 摄像头 · GPS</text>
+  </g>
+  <g stroke="#0284c7" stroke-width="1.6" fill="none" marker-end="url(#h1)">
+    <line x1="631" y1="290" x2="631" y2="278"/>
+    <line x1="631" y1="188" x2="631" y2="176"/>
+  </g>
+
+  <rect x="478" y="390" width="306" height="30" rx="4" fill="#fffbeb" stroke="#f59e0b"/>
+  <text x="631" y="403" text-anchor="middle" font-size="9" fill="#92400e">⚠️ 部分工程类资料用四层：网络层与应用层之间</text>
+  <text x="631" y="415" text-anchor="middle" font-size="9" fill="#92400e">加「平台层/中间件层」；<tspan font-weight="bold">教材明确是三层</tspan></text>
+</svg>
