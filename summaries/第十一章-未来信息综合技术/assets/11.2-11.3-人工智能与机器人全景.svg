@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="500" viewBox="0 0 820 500" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="820" height="500" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">人工智能（11.2） · 机器人技术（11.3）</text>
+  <text x="410" y="45" text-anchor="middle" font-size="10.5" fill="#6b7280">原始材料只有名词清单，考点＝把两组名单背全</text>
+
+  <!-- ============ 左：人工智能 ============ -->
+  <rect x="20" y="58" width="380" height="424" rx="8" fill="#eef2ff" stroke="#a5b4fc"/>
+  <rect x="20" y="58" width="380" height="30" rx="8" fill="#312e81"/>
+  <text x="210" y="78" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#ffffff">11.2 人工智能</text>
+  <text x="210" y="105" text-anchor="middle" font-size="10" fill="#3730a3">模拟、延伸和扩展人的智能 ｜ 弱 AI（无自我意识）vs 强 AI（能思维·有自我意识）</text>
+
+  <text x="38" y="126" font-size="11" font-weight="bold" fill="#dc2626">🔴 六大关键技术：听·看·记·说·造·学</text>
+  <g font-size="10">
+    <g fill="#ffffff" stroke="#818cf8">
+      <rect x="38" y="134" width="170" height="28" rx="4"/>
+      <rect x="214" y="134" width="168" height="28" rx="4"/>
+      <rect x="38" y="168" width="170" height="28" rx="4"/>
+      <rect x="214" y="168" width="168" height="28" rx="4"/>
+      <rect x="38" y="202" width="170" height="28" rx="4"/>
+    </g>
+    <rect x="214" y="202" width="168" height="28" rx="4" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="123" y="152" text-anchor="middle" fill="#312e81">① 自然语言处理 NLP · 听</text>
+    <text x="298" y="152" text-anchor="middle" fill="#312e81">② 计算机视觉 CV · 看</text>
+    <text x="123" y="186" text-anchor="middle" fill="#312e81">③ 知识图谱 · 记</text>
+    <text x="298" y="186" text-anchor="middle" fill="#312e81">④ 人机交互 HCI · 说</text>
+    <text x="123" y="220" text-anchor="middle" fill="#312e81">⑤ 虚拟/增强现实 VR·AR · 造</text>
+    <text x="298" y="220" text-anchor="middle" font-weight="bold" fill="#991b1b">⑥ 机器学习 · 学 ★</text>
+  </g>
+
+  <text x="38" y="252" font-size="11" font-weight="bold" fill="#dc2626">🔴 机器学习 · 按学习模式四分类</text>
+  <g font-size="9.5">
+    <g fill="#ffffff" stroke="#6366f1">
+      <rect x="38" y="260" width="170" height="46" rx="4"/>
+      <rect x="214" y="260" width="168" height="46" rx="4"/>
+      <rect x="38" y="312" width="170" height="46" rx="4"/>
+      <rect x="214" y="312" width="168" height="46" rx="4"/>
+    </g>
+    <text x="50" y="277" font-size="10.5" font-weight="bold" fill="#312e81">监督学习</text>
+    <text x="50" y="294" fill="#374151">已标记数据 → 回归 / 分类</text>
+    <text x="226" y="277" font-size="10.5" font-weight="bold" fill="#312e81">无监督学习</text>
+    <text x="226" y="294" fill="#374151">无标记 → K-Means / Apriori</text>
+    <text x="50" y="329" font-size="10.5" font-weight="bold" fill="#312e81">半监督学习</text>
+    <text x="50" y="346" fill="#374151">少量标注 + 大量未标记</text>
+    <text x="226" y="329" font-size="10.5" font-weight="bold" fill="#312e81">强化学习</text>
+    <text x="226" y="346" fill="#374151">状态→行为，追求最大奖赏</text>
+  </g>
+  <text x="210" y="374" text-anchor="middle" font-size="10" font-style="italic" fill="#4338ca">有标签→监督 ｜ 没标签→无监督 ｜ 少量标签→半监督 ｜ 靠奖惩→强化</text>
+
+  <text x="38" y="396" font-size="11" font-weight="bold" fill="#a16207">🟡 按学习方法二分类</text>
+  <g font-size="9.5">
+    <g fill="#fffbeb" stroke="#f59e0b">
+      <rect x="38" y="404" width="170" height="46" rx="4"/>
+      <rect x="214" y="404" width="168" height="46" rx="4"/>
+    </g>
+    <text x="50" y="421" font-size="10.5" font-weight="bold" fill="#92400e">传统机器学习</text>
+    <text x="50" y="438" fill="#374151">需人工特征工程，可解释性好</text>
+    <text x="226" y="421" font-size="10.5" font-weight="bold" fill="#92400e">深度学习</text>
+    <text x="226" y="438" fill="#374151">多层神经网络，免人工特征</text>
+  </g>
+  <text x="210" y="468" text-anchor="middle" font-size="9.5" fill="#6b7280">🟢 其他：迁移学习 · 主动学习 · 演化学习</text>
+
+  <!-- ============ 右：机器人 ============ -->
+  <rect x="420" y="58" width="380" height="424" rx="8" fill="#f0fdfa" stroke="#5eead4"/>
+  <rect x="420" y="58" width="380" height="30" rx="8" fill="#134e4a"/>
+  <text x="610" y="78" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#ffffff">11.3 机器人技术</text>
+
+  <text x="438" y="106" font-size="11" font-weight="bold" fill="#a16207">🟡 发展三阶段：只会重复 → 能感知 → 会思考</text>
+  <g font-size="9.5">
+    <g fill="#ffffff" stroke="#14b8a6">
+      <rect x="438" y="114" width="108" height="34" rx="4"/>
+      <rect x="556" y="114" width="108" height="34" rx="4"/>
+      <rect x="674" y="114" width="108" height="34" rx="4"/>
+    </g>
+    <text x="492" y="129" text-anchor="middle" font-weight="bold" fill="#134e4a">第一代</text>
+    <text x="492" y="142" text-anchor="middle" fill="#374151">示教再现型</text>
+    <text x="610" y="129" text-anchor="middle" font-weight="bold" fill="#134e4a">第二代</text>
+    <text x="610" y="142" text-anchor="middle" fill="#374151">感觉型（力/触/视）</text>
+    <text x="728" y="129" text-anchor="middle" font-weight="bold" fill="#134e4a">第三代</text>
+    <text x="728" y="142" text-anchor="middle" fill="#374151">智能型（推理决策）</text>
+  </g>
+  <g stroke="#14b8a6" stroke-width="1.3" fill="none" marker-end="url(#a1)">
+    <line x1="546" y1="131" x2="553" y2="131"/>
+    <line x1="664" y1="131" x2="671" y2="131"/>
+  </g>
+  <text x="610" y="164" text-anchor="middle" font-size="10" fill="#0f766e">机器人 4.0＝<tspan font-weight="bold">边缘计算</tspan>支撑的<tspan font-weight="bold">云端分布式智能</tspan>（呼应 11.4）</text>
+
+  <text x="438" y="186" font-size="11" font-weight="bold" fill="#dc2626">🔴 机器人 4.0 五大核心技术</text>
+  <g font-size="9.5">
+    <g fill="#ffffff" stroke="#0d9488">
+      <rect x="438" y="194" width="170" height="30" rx="4"/>
+      <rect x="614" y="194" width="168" height="30" rx="4"/>
+      <rect x="438" y="230" width="170" height="30" rx="4"/>
+      <rect x="614" y="230" width="168" height="30" rx="4"/>
+      <rect x="438" y="266" width="344" height="30" rx="4"/>
+    </g>
+    <text x="523" y="213" text-anchor="middle" fill="#134e4a">① 云-边-端无缝协同计算</text>
+    <text x="698" y="213" text-anchor="middle" fill="#134e4a">② 持续学习与协同学习</text>
+    <text x="523" y="249" text-anchor="middle" fill="#134e4a">③ 知识图谱</text>
+    <text x="698" y="249" text-anchor="middle" fill="#134e4a">④ 场景自适应（三维语义理解）</text>
+    <text x="610" y="285" text-anchor="middle" fill="#134e4a">⑤ 数据安全</text>
+  </g>
+  <text x="610" y="311" text-anchor="middle" font-size="10" font-style="italic" fill="#0f766e">口诀：协同算 · 持续学 · 有图谱 · 懂场景 · 保安全</text>
+
+  <text x="438" y="333" font-size="11" font-weight="bold" fill="#dc2626">🔴 机器人五分类（按控制方式）</text>
+  <g font-size="9.5">
+    <g fill="#ffffff" stroke="#0d9488">
+      <rect x="438" y="341" width="344" height="26" rx="4"/>
+      <rect x="438" y="371" width="344" height="26" rx="4"/>
+      <rect x="438" y="401" width="344" height="26" rx="4"/>
+      <rect x="438" y="431" width="344" height="26" rx="4"/>
+      <rect x="438" y="461" width="344" height="26" rx="4"/>
+    </g>
+    <text x="450" y="358" fill="#134e4a"><tspan font-weight="bold">操作机器人</tspan> — 主动机械手 / 从动机械手，遥控放射性作业</text>
+    <text x="450" y="388" fill="#134e4a"><tspan font-weight="bold">程序机器人</tspan> — 按预先给定的程序、条件、位置作业（写给它）</text>
+    <text x="450" y="418" fill="#134e4a"><tspan font-weight="bold">示教再现机器人</tspan> — 录下所教动作再复现，如磁带录放（教给它）</text>
+    <text x="450" y="448" fill="#134e4a"><tspan font-weight="bold">智能机器人</tspan> — 随工作环境改变而变换动作（它自己改）</text>
+    <text x="450" y="478" fill="#134e4a"><tspan font-weight="bold">综合机器人</tspan> — 操作＋示教再现＋智能三者组合，如火星机器人</text>
+  </g>
+</svg>
