@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="530" viewBox="0 0 820 530" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="820" height="530" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">边缘计算（11.4） · 数字孪生体（11.5）</text>
+  <text x="410" y="45" text-anchor="middle" font-size="10.5" fill="#6b7280">边缘计算＝把算力放到数据身边 ｜ 数字孪生＝给物理实体造一个会进化的数字分身</text>
+
+  <!-- ============ 左：边缘计算 ============ -->
+  <rect x="20" y="58" width="380" height="452" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+  <rect x="20" y="58" width="380" height="30" rx="8" fill="#7c2d12"/>
+  <text x="210" y="78" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#ffffff">11.4 边缘计算</text>
+  <text x="210" y="105" text-anchor="middle" font-size="10" fill="#7c2d12">处理/运行/服务由<tspan font-weight="bold">网络中心下放到网络边缘节点</tspan></text>
+  <text x="210" y="121" text-anchor="middle" font-size="10" fill="#7c2d12">在<tspan font-weight="bold">智能网关</tspan>上就近采集处理，<tspan font-weight="bold">不上传原生数据</tspan></text>
+
+  <text x="38" y="145" font-size="11" font-weight="bold" fill="#dc2626">🔴 四大特点：连 · 入 · 苛 · 散</text>
+  <g font-size="9.5">
+    <g fill="#ffffff" stroke="#f97316">
+      <rect x="38" y="153" width="344" height="42" rx="4"/>
+      <rect x="38" y="199" width="344" height="42" rx="4"/>
+      <rect x="38" y="245" width="344" height="42" rx="4"/>
+      <rect x="38" y="291" width="344" height="42" rx="4"/>
+    </g>
+    <text x="50" y="170" font-size="10.5" font-weight="bold" fill="#9a3412">① 联接性 — 边缘计算的基础</text>
+    <text x="50" y="187" fill="#374151">物理对象与场景多样，需丰富的联接功能</text>
+    <text x="50" y="216" font-size="10.5" font-weight="bold" fill="#9a3412">② 数据第一入口 — 物理世界→数字世界的桥梁</text>
+    <text x="50" y="233" fill="#374151">拥有大量、实时、完整的数据，可做全生命周期管理</text>
+    <text x="50" y="262" font-size="10.5" font-weight="bold" fill="#9a3412">③ 约束性 — 适配恶劣工业现场</text>
+    <text x="50" y="279" fill="#374151">防电磁/尘/爆、抗振动与电压波动；功耗成本空间受限</text>
+    <text x="50" y="308" font-size="10.5" font-weight="bold" fill="#9a3412">④ 分布性 — 部署天然分布式</text>
+    <text x="50" y="325" fill="#374151">分布式计算存储、动态调度统一管理、分布式智能与安全</text>
+  </g>
+
+  <text x="38" y="353" font-size="11" font-weight="bold" fill="#a16207">🟡 边云协同六种：边执行 · 云策略</text>
+  <g font-size="9.5">
+    <g fill="#fffbeb" stroke="#f59e0b">
+      <rect x="38" y="361" width="170" height="26" rx="4"/>
+      <rect x="212" y="361" width="170" height="26" rx="4"/>
+      <rect x="38" y="391" width="170" height="26" rx="4"/>
+      <rect x="212" y="391" width="170" height="26" rx="4"/>
+      <rect x="38" y="421" width="170" height="26" rx="4"/>
+      <rect x="212" y="421" width="170" height="26" rx="4"/>
+    </g>
+    <text x="123" y="378" text-anchor="middle" fill="#92400e">资源协同</text>
+    <text x="297" y="378" text-anchor="middle" fill="#92400e">数据协同</text>
+    <text x="123" y="408" text-anchor="middle" font-weight="bold" fill="#991b1b">智能协同（边推理·云训练）</text>
+    <text x="297" y="408" text-anchor="middle" fill="#92400e">应用管理协同</text>
+    <text x="123" y="438" text-anchor="middle" fill="#92400e">业务管理协同</text>
+    <text x="297" y="438" text-anchor="middle" fill="#92400e">服务协同（ECSaaS）</text>
+  </g>
+
+  <text x="38" y="464" font-size="11" font-weight="bold" fill="#15803d">🟢 应用场合（共性：低时延 / 数据量大不宜回传）</text>
+  <text x="38" y="482" font-size="10" fill="#374151">智慧园区 · 安卓云与云游戏 · 视频监控 · 工业物联网 · Cloud VR</text>
+  <text x="38" y="500" font-size="9.5" font-style="italic" fill="#6b7280">🟢 边缘计算安全：可信基础设施 · 安全服务 · 设备接入保障 · 安全网络覆盖</text>
+
+  <!-- ============ 右：数字孪生 ============ -->
+  <rect x="420" y="58" width="380" height="452" rx="8" fill="#f5f3ff" stroke="#c4b5fd"/>
+  <rect x="420" y="58" width="380" height="30" rx="8" fill="#4c1d95"/>
+  <text x="610" y="78" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#ffffff">11.5 数字孪生体</text>
+
+  <text x="438" y="106" font-size="11" font-weight="bold" fill="#dc2626">🔴 定义拆成五个动作</text>
+  <g font-size="9.5" fill="#374151">
+    <text x="438" y="123">① 实测·仿真·数据分析 → <tspan font-weight="bold" fill="#5b21b6">实时感知 / 诊断 / 预测</tspan> 物理实体状态</text>
+    <text x="438" y="139">② 通过<tspan font-weight="bold" fill="#5b21b6">优化和指令</tspan> → 调控物理实体的行为</text>
+    <text x="438" y="155">③ 数字模型间<tspan font-weight="bold" fill="#5b21b6">相互学习</tspan> → 进化自身</text>
+    <text x="438" y="171">④ 改进<tspan font-weight="bold" fill="#5b21b6">利益相关方</tspan>的决策，覆盖物理实体<tspan font-weight="bold" fill="#5b21b6">全生命周期</tspan></text>
+  </g>
+
+  <text x="438" y="196" font-size="11" font-weight="bold" fill="#dc2626">🔴 关键技术</text>
+  <g>
+    <rect x="438" y="204" width="344" height="46" rx="4" fill="#ffffff" stroke="#8b5cf6"/>
+    <text x="450" y="221" font-size="10.5" font-weight="bold" fill="#4c1d95">建模 — 把对物理世界的理解简化并模型化</text>
+    <text x="450" y="238" font-size="9.5" fill="#374151">🟡 三维空间：需求指标 · 生存期阶段 · 空间尺度</text>
+  </g>
+  <g>
+    <rect x="438" y="256" width="344" height="46" rx="4" fill="#ffffff" stroke="#8b5cf6"/>
+    <text x="450" y="273" font-size="10.5" font-weight="bold" fill="#4c1d95">仿真 — 把含确定性规律与完整机理的模型转成软件</text>
+    <text x="450" y="290" font-size="9.5" fill="#374151">前提：模型正确 + 输入信息与环境数据完整 → 基本准确反映物理世界</text>
+  </g>
+  <text x="610" y="318" text-anchor="middle" font-size="10" font-style="italic" fill="#6d28d9">建模＝把理解写下来 ｜ 仿真＝把模型跑起来验证</text>
+
+  <g>
+    <rect x="438" y="328" width="344" height="30" rx="4" fill="#ede9fe" stroke="#a78bfa"/>
+    <text x="610" y="347" text-anchor="middle" font-size="10" fill="#4c1d95">⚠️ 口径分歧：另一口径把<tspan font-weight="bold">数字线程</tspan>并列为第三核心技术</text>
+  </g>
+
+  <text x="438" y="378" font-size="10.5" font-weight="bold" fill="#4c1d95">其他内外围技术（原文清单）</text>
+  <text x="438" y="395" font-size="9.5" fill="#374151">VR / AR / MR · 数字线程 · <tspan font-weight="bold">系统工程与 MBSE（→2.8）</tspan> · 物联网 · 云计算</text>
+  <text x="438" y="411" font-size="9.5" fill="#374151">雾计算 · <tspan font-weight="bold">边缘计算（→11.4）</tspan> · 大数据 · 机器学习 · 区块链</text>
+
+  <text x="438" y="437" font-size="11" font-weight="bold" fill="#15803d">🟢 应用四域</text>
+  <g font-size="10">
+    <g fill="#ffffff" stroke="#a78bfa">
+      <rect x="438" y="445" width="82" height="28" rx="4"/>
+      <rect x="526" y="445" width="82" height="28" rx="4"/>
+      <rect x="614" y="445" width="82" height="28" rx="4"/>
+      <rect x="702" y="445" width="80" height="28" rx="4"/>
+    </g>
+    <text x="479" y="463" text-anchor="middle" fill="#4c1d95">制造</text>
+    <text x="567" y="463" text-anchor="middle" fill="#4c1d95">产业</text>
+    <text x="655" y="463" text-anchor="middle" fill="#4c1d95">城市</text>
+    <text x="742" y="463" text-anchor="middle" fill="#4c1d95">战场</text>
+  </g>
+  <text x="438" y="492" font-size="9.5" fill="#6b7280">制造分设备级(实时监控)/工厂级(全过程管控)/产业级(全生命周期追溯)</text>
+  <text x="438" y="506" font-size="9.5" fill="#6b7280">城市＝在数字空间再造一座与现实匹配的城市；⚠️「产业」未获教材级展开</text>
+</svg>
