@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="600" viewBox="0 0 820 600" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="820" height="600" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="24" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">云原生架构相关技术（14.3）</text>
+  <text x="410" y="42" text-anchor="middle" font-size="10" fill="#6b7280">容器/K8s → 弹性+全过程自动化 ｜ 微服务 → 服务化 ｜ Serverless → 弹性到极致 ｜ 服务网格 → Mesh 化</text>
+
+  <!-- 容器与 K8s -->
+  <rect x="20" y="54" width="390" height="248" rx="8" fill="#f0f9ff" stroke="#7dd3fc"/>
+  <rect x="20" y="54" width="390" height="26" rx="8" fill="#075985"/>
+  <text x="215" y="72" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">14.3.1 容器技术与 Kubernetes</text>
+  <text x="34" y="94" font-size="9" fill="#0369a1">容器＝把应用及其<tspan font-weight="bold">所有依赖项打包发布</tspan>，应用不再受环境限制</text>
+  <text x="34" y="108" font-size="9" fill="#6b7280">🟡 三大价值：敏捷弹性可移植（3~10 倍交付效率）· 成本降低（约 50%）· 标准化</text>
+
+  <text x="34" y="128" font-size="10.5" font-weight="bold" fill="#dc2626">🔴 K8s 五大核心能力：调度·部署·自愈·发现·伸缩</text>
+  <g font-size="9">
+    <g fill="#ffffff" stroke="#0ea5e9">
+      <rect x="34" y="136" width="362" height="26" rx="4"/>
+      <rect x="34" y="165" width="362" height="26" rx="4"/>
+      <rect x="34" y="194" width="362" height="26" rx="4"/>
+      <rect x="34" y="223" width="362" height="26" rx="4"/>
+      <rect x="34" y="252" width="362" height="26" rx="4"/>
+    </g>
+    <text x="46" y="153" fill="#374151"><tspan font-weight="bold" fill="#075985">① 资源调度</tspan> — 按 CPU/Memory/GPU 选择合适节点</text>
+    <text x="46" y="182" fill="#374151"><tspan font-weight="bold" fill="#075985">② 应用部署与管理</tspan> — 自动发布回滚、配置、存储卷编排</text>
+    <text x="46" y="211" fill="#374151"><tspan font-weight="bold" fill="#075985">③ 自动修复</tspan> — 节点健康检查自动迁移；应用自愈</text>
+    <text x="46" y="240" fill="#374151"><tspan font-weight="bold" fill="#075985">④ 服务发现与负载均衡</tspan> — Service 资源 + DNS + 多种 LB</text>
+    <text x="46" y="269" fill="#374151"><tspan font-weight="bold" fill="#075985">⑤ 弹性伸缩</tspan> — CPU 过高/响应过长时自动扩容</text>
+  </g>
+  <text x="34" y="292" font-size="9" fill="#6b7280">🟡 控制平面四组件：APIServer · Controller · Scheduler · etcd ｜ 核心特性：声明式 API · 可扩展 · 可移植</text>
+
+  <!-- 微服务 -->
+  <rect x="20" y="310" width="390" height="272" rx="8" fill="#f0fdfa" stroke="#5eead4"/>
+  <rect x="20" y="310" width="390" height="26" rx="8" fill="#134e4a"/>
+  <text x="215" y="328" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">14.3.2 云原生微服务 · 🔴 四类设计约束</text>
+  <g font-size="9">
+    <rect x="34" y="344" width="362" height="48" rx="4" fill="#ffffff" stroke="#14b8a6"/>
+    <text x="46" y="361" font-size="10" font-weight="bold" fill="#134e4a">① 个体约束</text>
+    <text x="46" y="377" fill="#374151">业务域划分相互独立；遵循 SOLID 的<tspan font-weight="bold">单一职责原则 SRP</tspan></text>
+
+    <rect x="34" y="396" width="362" height="62" rx="4" fill="#ffffff" stroke="#14b8a6"/>
+    <text x="46" y="413" font-size="10" font-weight="bold" fill="#134e4a">② 横向关系</text>
+    <text x="46" y="429" fill="#374151"><tspan font-weight="bold">可发现性</tspan>（服务注册中心）+ <tspan font-weight="bold">可交互性</tspan>（语言无关协议 REST/IDL）</text>
+    <text x="46" y="445" fill="#374151"><tspan font-weight="bold">面向失败设计</tspan>：限流·熔断·隔仓·负载均衡·异步·反压</text>
+
+    <rect x="34" y="462" width="362" height="62" rx="4" fill="#ffffff" stroke="#14b8a6"/>
+    <text x="46" y="479" font-size="10" font-weight="bold" fill="#134e4a">③ 与数据层的纵向约束</text>
+    <text x="46" y="495" fill="#374151"><tspan font-weight="bold" fill="#991b1b">DSS 原则：数据是微服务私有资产，访问须走 API</tspan></text>
+    <text x="46" y="511" fill="#374151">读写分离（CQRS）· 无状态设计 · 计算存储分离</text>
+
+    <rect x="34" y="528" width="362" height="46" rx="4" fill="#ffffff" stroke="#14b8a6"/>
+    <text x="46" y="545" font-size="10" font-weight="bold" fill="#134e4a">④ 全局视角下的分布式约束</text>
+    <text x="46" y="561" fill="#374151">全自动化 CI/CD · 蓝绿与金丝雀发布 · 全链路实时可观测</text>
+  </g>
+
+  <!-- Serverless -->
+  <rect x="420" y="54" width="380" height="212" rx="8" fill="#fffbeb" stroke="#fcd34d"/>
+  <rect x="420" y="54" width="380" height="26" rx="8" fill="#78350f"/>
+  <text x="610" y="72" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">14.3.3 无服务器技术 Serverless</text>
+  <text x="434" y="94" font-size="10.5" font-weight="bold" fill="#dc2626">🔴 四大特征：全托管 · 通用 · 自动弹性 · 按量计费</text>
+  <g font-size="9">
+    <g fill="#ffffff" stroke="#f59e0b">
+      <rect x="434" y="102" width="352" height="26" rx="4"/>
+      <rect x="434" y="131" width="352" height="26" rx="4"/>
+      <rect x="434" y="160" width="352" height="26" rx="4"/>
+      <rect x="434" y="189" width="352" height="26" rx="4"/>
+    </g>
+    <text x="446" y="119" fill="#374151">① <tspan font-weight="bold">全托管计算服务</tspan> — 只写代码，不管基础设施运维安全高可用</text>
+    <text x="446" y="148" fill="#374151">② <tspan font-weight="bold">通用性</tspan> — 结合 BaaS API 支撑云上所有重要应用类型</text>
+    <text x="446" y="177" fill="#374151">③ <tspan font-weight="bold">自动弹性伸缩</tspan> — 无需提前容量规划</text>
+    <text x="446" y="206" fill="#374151">④ <tspan font-weight="bold">按量计费</tspan> — 无须为闲置资源付费</text>
+  </g>
+  <text x="434" y="232" font-size="9" fill="#6b7280">🟢 FaaS 是最具代表性形态（事件驱动触发）；难点：改变开发习惯、生态不成熟、</text>
+  <text x="434" y="245" font-size="9" fill="#6b7280">冷启动延迟、数据库连接成本高 → 融合方案：Serverless + 容器（ECI/SAE/CloudRun）</text>
+  <text x="434" y="259" font-size="9" fill="#6b7280">🟡 三关注点：计算资源弹性调度 · 负载均衡和流控 · 安全性</text>
+
+  <!-- 服务网格 -->
+  <rect x="420" y="274" width="380" height="308" rx="8" fill="#faf5ff" stroke="#d8b4fe"/>
+  <rect x="420" y="274" width="380" height="26" rx="8" fill="#4c1d95"/>
+  <text x="610" y="292" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">14.3.4 服务网格 Service Mesh</text>
+  <text x="434" y="314" font-size="9" fill="#6d28d9">要解决：治理门槛高 · 多语言支持不足 · 代码侵入性强</text>
+
+  <rect x="434" y="322" width="352" height="44" rx="4" fill="#fef2f2" stroke="#ef4444"/>
+  <text x="446" y="339" font-size="10" font-weight="bold" fill="#991b1b">🔴 核心思想：Sidecar（边车）模式</text>
+  <text x="446" y="356" font-size="9" fill="#374151">把<tspan font-weight="bold">通信功能</tspan>与<tspan font-weight="bold">业务功能</tspan>解耦；业务代码只与同机器下的代理通信</text>
+
+  <g font-size="9">
+    <rect x="434" y="374" width="172" height="60" rx="4" fill="#ffffff" stroke="#a855f7"/>
+    <text x="446" y="391" font-size="10" font-weight="bold" fill="#4c1d95">数据平面</text>
+    <text x="446" y="407" fill="#374151">Sidecar 代理（Envoy）</text>
+    <text x="446" y="422" fill="#6b7280">C++ 高性能，拦截进出流量</text>
+    <rect x="614" y="374" width="172" height="60" rx="4" fill="#ffffff" stroke="#a855f7"/>
+    <text x="626" y="391" font-size="10" font-weight="bold" fill="#4c1d95">控制平面</text>
+    <text x="626" y="407" fill="#374151">集中式管理运维入口</text>
+    <text x="626" y="422" fill="#6b7280">下发配置与策略（Istiod）</text>
+  </g>
+  <text x="610" y="450" text-anchor="middle" font-size="9" fill="#6d28d9">主要功能：流量管理 · 安全性 · 可观测性 · 韧性</text>
+
+  <text x="434" y="472" font-size="10.5" font-weight="bold" fill="#a16207">🟡 Istio 控制平面三组件</text>
+  <g font-size="9">
+    <g fill="#ffffff" stroke="#a855f7">
+      <rect x="434" y="480" width="352" height="32" rx="4"/>
+      <rect x="434" y="516" width="352" height="26" rx="4"/>
+      <rect x="434" y="546" width="352" height="26" rx="4"/>
+    </g>
+    <text x="446" y="495" fill="#374151"><tspan font-weight="bold" fill="#4c1d95">Pilot（最重要）</tspan> — 服务发现（转为标准服务模型）</text>
+    <text x="446" y="507" fill="#374151">＋ 流量路由与服务治理（Rules API → Envoy API 下发）</text>
+    <text x="446" y="533" fill="#374151"><tspan font-weight="bold" fill="#4c1d95">Galley</tspan> — 配置验证和处理</text>
+    <text x="446" y="563" fill="#374151"><tspan font-weight="bold" fill="#4c1d95">Citadel</tspan> — 密钥和证书管理，实现授权认证</text>
+  </g>
+</svg>
