@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="400" viewBox="0 0 820 400" font-family="ui-sans-serif, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="k1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0284c7"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="820" height="400" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="410" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2937">云原生案例分析的通用套路（14.4）</text>
+  <text x="410" y="45" text-anchor="middle" font-size="10" fill="#6b7280">五个案例讲的是同一件事 · 本图为笔记归纳的应试抓手（非教材内容）</text>
+
+  <!-- 三段式 -->
+  <g>
+    <rect x="20" y="60" width="240" height="176" rx="8" fill="#fef2f2" stroke="#fca5a5"/>
+    <rect x="20" y="60" width="240" height="26" rx="8" fill="#7f1d1d"/>
+    <text x="140" y="78" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">① 痛点</text>
+    <g font-size="9.5" fill="#374151">
+      <text x="34" y="104">· 技术体系不统一（多来源系统）</text>
+      <text x="34" y="126">· 业务<tspan font-weight="bold">波峰波谷</tspan>明显、资源利用率低</text>
+      <text x="34" y="148">· 迭代快、线上问题多、<tspan font-weight="bold">定位耗时长</tspan></text>
+      <text x="34" y="170">· 大促<tspan font-weight="bold">稳定性风险</tspan>（三方接口 / 慢 SQL）</text>
+      <text x="34" y="192">· 压测与容量评估<tspan font-weight="bold">缺常态化机制</tspan></text>
+      <text x="34" y="214">· 大促与日常资源差距大，频繁扩缩容</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="290" y="60" width="240" height="176" rx="8" fill="#f0f9ff" stroke="#7dd3fc"/>
+    <rect x="290" y="60" width="240" height="26" rx="8" fill="#075985"/>
+    <text x="410" y="78" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">② 云原生手段</text>
+    <g font-size="9.5" fill="#374151">
+      <text x="304" y="104">· <tspan font-weight="bold">容器 + 编排</tspan>（ACK / K8s）→ 弹性扩缩容</text>
+      <text x="304" y="126">· <tspan font-weight="bold">微服务框架</tspan>（Spring Cloud Alibaba）→ 服务化</text>
+      <text x="304" y="148">· <tspan font-weight="bold">可观测三件套</tspan>：链路追踪 + 监控 ARMS + 日志</text>
+      <text x="304" y="170">· <tspan font-weight="bold">高可用组件</tspan> AHAS → 限流降级、关键资源防护</text>
+      <text x="304" y="192">· <tspan font-weight="bold">压测与容量评估</tspan> PTS → 提前研判承载极限</text>
+      <text x="304" y="214">· 调度算法 + 服务画像 → 提升单机利用率</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="560" y="60" width="240" height="176" rx="8" fill="#f0fdf4" stroke="#86efac"/>
+    <rect x="560" y="60" width="240" height="26" rx="8" fill="#14532d"/>
+    <text x="680" y="78" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">③ 收益</text>
+    <g font-size="9.5" fill="#374151">
+      <text x="574" y="104">· 只用原集群 <tspan font-weight="bold" fill="#15803d">40% 的机器</tspan>撑起全线服务</text>
+      <text x="574" y="126">· <tspan font-weight="bold" fill="#15803d">单机资源利用率 +20%</tspan></text>
+      <text x="574" y="148">· <tspan font-weight="bold" fill="#15803d">下掉集群内一半服务器</tspan>及机房资源</text>
+      <text x="574" y="170">· 撑住日常流量 <tspan font-weight="bold" fill="#15803d">300% 的峰值</tspan>且不加机器</text>
+      <text x="574" y="192">· <tspan font-weight="bold" fill="#15803d">节约服务器成本 50% 以上</tspan></text>
+      <text x="574" y="214">· 大促保障<tspan font-weight="bold" fill="#15803d">常态化</tspan></text>
+    </g>
+  </g>
+  <g stroke="#0284c7" stroke-width="1.8" fill="none" marker-end="url(#k1)">
+    <line x1="262" y1="148" x2="286" y2="148"/>
+    <line x1="532" y1="148" x2="556" y2="148"/>
+  </g>
+
+  <!-- 痛点↔原则映射 -->
+  <rect x="20" y="252" width="780" height="128" rx="8" fill="#faf5ff" stroke="#d8b4fe"/>
+  <rect x="20" y="252" width="780" height="26" rx="8" fill="#4c1d95"/>
+  <text x="410" y="270" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">电商案例的四个痛点，恰好对应 14.2 的四条原则</text>
+  <g font-size="9.5">
+    <g fill="#ffffff" stroke="#a855f7">
+      <rect x="34" y="288" width="180" height="76" rx="5"/>
+      <rect x="228" y="288" width="180" height="76" rx="5"/>
+      <rect x="422" y="288" width="180" height="76" rx="5"/>
+      <rect x="616" y="288" width="170" height="76" rx="5"/>
+    </g>
+    <text x="124" y="310" text-anchor="middle" fill="#374151">定位问题耗时长</text>
+    <text x="124" y="332" text-anchor="middle" font-size="11" font-weight="bold" fill="#4c1d95">→ 可观测原则</text>
+    <text x="124" y="352" text-anchor="middle" font-size="9" fill="#6b7280">Logging / Tracing / Metrics</text>
+
+    <text x="318" y="310" text-anchor="middle" fill="#374151">大促稳定性风险</text>
+    <text x="318" y="332" text-anchor="middle" font-size="11" font-weight="bold" fill="#4c1d95">→ 韧性原则</text>
+    <text x="318" y="352" text-anchor="middle" font-size="9" fill="#6b7280">限流 · 降级 · 熔断</text>
+
+    <text x="512" y="310" text-anchor="middle" fill="#374151">容量评估频繁</text>
+    <text x="512" y="332" text-anchor="middle" font-size="11" font-weight="bold" fill="#4c1d95">→ 弹性原则</text>
+    <text x="512" y="352" text-anchor="middle" font-size="9" fill="#6b7280">随业务量自动伸缩</text>
+
+    <text x="701" y="310" text-anchor="middle" fill="#374151">频繁扩缩容</text>
+    <text x="701" y="332" text-anchor="middle" font-size="11" font-weight="bold" fill="#4c1d95">→ 全过程自动化</text>
+    <text x="701" y="352" text-anchor="middle" font-size="9" fill="#6b7280">IaC / GitOps / Operator</text>
+  </g>
+</svg>
